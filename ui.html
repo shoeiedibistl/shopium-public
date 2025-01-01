@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>ui</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="theme-color" content="#4285f4">
+    <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
+    <script type="module" crossorigin src="scripts/index.js?1735743650050"></script>
+    <link rel="stylesheet" crossorigin href="styles/index.css">
+  </head>
+  <body data-barba="wrapper">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner">HEADER</div>
+      </header>
+      <main class="ui-page" data-barba="container" data-barba-namespace="ui">
+        <div class="inner"><br><br><br><br><br><br><br>
+          <div class="title-112">title-112</div><br><br><br>
+          <div class="title-80">title-80</div><br><br><br>
+          <div class="title-48">title-48</div><br><br><br>
+          <div class="title-44">title-44</div><br><br><br>
+          <div class="title-36">title-36</div><br><br><br>
+          <div class="title-32">title-32</div><br><br><br>
+          <div class="title-28">title-28</div><br><br><br>
+          <div class="text-24">text-24</div><br><br><br>
+          <div class="text-22">text-22</div><br><br><br>
+          <div class="text-20">text-20</div><br><br><br>
+          <div class="text-18">text-18</div><br><br><br>
+          <div class="text-16">text-16</div><br><br><br>
+          <div class="link-18">link-18</div><br><br><br>
+          <div class="link-16">link-16</div><br><br><br>+button(title)
+          <button class="button link-18 uppercase">title</button><br><br><br>
+          <div class="bg-blackBg inline-block p-4">
+            <div class="text-whiteText">+button(title).white</div>
+            <button class="button link-18 uppercase white">title</button>
+          </div><br><br><br>+button-icon(title)<br>
+          <button class="button-icon bg-greyLinkBg"><span class="button__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                <path d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+              </svg></span><span class="button__text link-18 uppercase">title</span></button><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <form class="contacts-form__form" data-form-id="main-form" action="#">
+            <div class="contacts-form__row">
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="fio" id="contacts-form1" type="text" placeholder="Имя *" required="" data-validate="text-only"/>
+                  <div class="custom-placeholder__service"></div><span>Имя *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+              <p class="font-bold">Только русские буквы</p>
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="fio" id="contacts-form1" type="text" placeholder="Имя *" required="" data-validate="text-cyrillic"/>
+                  <div class="custom-placeholder__service"></div><span>Имя *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="nickname" id="contacts-form1" type="text" placeholder="Никнейм *" required="" data-validate="text"/>
+                  <div class="custom-placeholder__service"></div><span>Никнейм *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-form__row">
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="email" id="contacts-form2" type="email" required="" placeholder="Email *" data-validate="email" minlength="3"/>
+                  <div class="custom-placeholder__service"></div><span>Email *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-form__row">
+              <div class="contacts-form__item">
+                <div class="ui-input custom-placeholder" data-input-parent="">
+                  <input data-input="" name="phone" id="contacts-form3" type="tel" data-mask-phone="" placeholder="Телефон *" required="" data-validate="tel"/>
+                  <div class="custom-placeholder__service"></div><span>Телефон *</span>
+                  <div class="ui-input__error" data-error-container=""></div>
+                </div>
+              </div>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner">FOOTER</div>
+      </footer>
+    </div>
+  </body>
+</html>
