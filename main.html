@@ -7,7 +7,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta name="theme-color" content="#4285f4">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="scripts/index.js?1735921873813"></script>
+    <script type="module" crossorigin src="scripts/index.js?1735938911306"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
   <body data-barba="wrapper">
@@ -1742,6 +1742,70 @@
             </div>
           </div>
         </section>
+        <div class="form-section">
+          <div class="form-section__inner bg-blackBg">
+            <div class="form-section__head">
+              <div class="form-section__bg"></div>
+              <div class="form-section__text">
+                <div class="form-section__title title-80 text-whiteText">Получите расчет</div>
+                <div class="form-section__subtitle text-24 text-whiteText">Оставьте контактные данные и получите экспресс-расчет по вашему запросу</div>
+              </div>
+            </div>
+            <div class="form-section__body">
+              <form class="form-section__form" id="get-quote-form" novalidate="/" data-validate="form">
+                <div class="form-section__form-inputs">
+                  <div class="form-section__form-input">
+                    <div class="input-ui__wrapper" data-input-wrapper="">
+                      <div class="input-ui custom-placeholder" data-input-parent="">
+                        <input data-input="" name="name" placeholder="Ваше имя" required="" autocomplete="given-name" minlength="2" maxlength="50" data-validate="name"/>
+                        <div class="custom-placeholder__service"><span>Ваше имя</span>
+                        </div>
+                      </div>
+                      <div class="input-ui__error text-16" data-error-container=""></div>
+                    </div>
+                  </div>
+                  <div class="form-section__form-input">
+                    <div class="input-ui__wrapper" data-input-wrapper="">
+                      <div class="input-ui custom-placeholder" data-input-parent="">
+                        <input data-input="" name="phone" placeholder="Телефон" required="" autocomplete="tel" data-mask-phone="" data-validate="tel"/>
+                        <div class="custom-placeholder__service"><span>Телефон</span>
+                        </div>
+                      </div>
+                      <div class="input-ui__error text-16" data-error-container=""></div>
+                    </div>
+                  </div>
+                  <div class="form-section__form-textarea">
+                    <div class="input-ui__wrapper" data-input-wrapper="">
+                      <label class="textarea-ui custom-placeholder" data-input-parent="">
+                        <textarea data-input="" name="comment" placeholder="Ссылки на товары (если есть)"></textarea><span class="custom-placeholder__service"><span>Ссылки на товары (если есть)</span></span>
+                      </label><span class="input-ui__error text-16" data-error-container=""></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-section__radios" data-input-wrapper="">
+                  <div class="form-section__radios-inputs">
+                    <label class="radiobutton">
+                      <input type="radio" name="communication" required="" checked=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Перезвоните мне</span>
+                    </label>
+                    <label class="radiobutton">
+                      <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в Telegram</span>
+                    </label>
+                    <label class="radiobutton">
+                      <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в WhatsApp</span>
+                    </label>
+                  </div>
+                  <div class="form-section__radios-error text-16" data-error-container="">Выберите один из вариантов</div>
+                </div>
+                <div class="form-section__form-submit">
+                  <div class="form-section__form-agreement text-16 text-whiteText opacity-60">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных данных</div>
+                  <div class="form-section__form-button">
+                    <button class="button link-18 uppercase wide" type="submit" form="get-quote-form">Отправить</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer__inner">FOOTER</div>
