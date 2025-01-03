@@ -7,7 +7,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta name="theme-color" content="#4285f4">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="scripts/index.js?1735849283985"></script>
+    <script type="module" crossorigin src="scripts/index.js?1735867219363"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
   <body data-barba="wrapper">
@@ -150,6 +150,36 @@
                 <div class="case-card__term title-48 relative text-whiteText">term</div>
               </div>
             </div><br><br><br>
+            <div class="text-whiteText">+country-term-card(departureCountry, destinationCountry, term, departureCountryFlag = us, destinationCountryFlag = ru)</div>
+            <div class="country-term-card">
+              <div class="country-term-card__top">
+                <div class="country-term-card__country">
+                  <div class="country-term-card__country-flag">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/flag-us.webp"/>
+                      <source class="lazyload" type="image/png" srcset="images/flag-us.png"/><img class="picture__img lazyload" src="images/flag-us.png" data-src="images/flag-us.png" alt="flag-us.png"/>
+                    </picture>
+                  </div>
+                  <div class="country-term-card__country-name link-18 text-whiteText">departureCountry</div>
+                </div>
+                <div class="country-term-card__arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                    <path d="M14 6.43031L20.07 12.5003L14 18.5703" stroke="#777777" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path>
+                    <path d="M3.5 12.5L19.33 12.5" stroke="#777777" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="country-term-card__country">
+                  <div class="country-term-card__country-flag">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/flag-ru.webp"/>
+                      <source class="lazyload" type="image/png" srcset="images/flag-ru.png"/><img class="picture__img lazyload" src="images/flag-ru.png" data-src="images/flag-ru.png" alt="flag-ru.png"/>
+                    </picture>
+                  </div>
+                  <div class="country-term-card__country-name link-18 text-whiteText">destinationCountry</div>
+                </div>
+              </div>
+              <div class="country-term-card__term title-48 text-whiteText">term</div>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           </div><br><br><br>+checkbox-switch(text1, text2)
           <label class="checkbox-switch">
             <input type="checkbox"/><span class="checkbox-switch__text text-18">text1</span><span class="checkbox-switch__box bg-blueBg"><span class="checkbox-switch__slider bg-whiteBg"></span></span><span class="checkbox-switch__text text-18">text2</span>
