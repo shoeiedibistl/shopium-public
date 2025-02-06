@@ -5,12 +5,12 @@
     <title>Main</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta name="theme-color" content="#4285f4">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="scripts/index.js?1737650686925"></script>
+    <meta name="format-detection" content="telephone=no">
+    <script type="module" crossorigin src="scripts/index.js?1738804733051"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
-  <body data-barba="wrapper">
+  <body class="loading" data-barba="wrapper">
     <div class="wrapper">
       <header class="header active" data-header="">
         <div class="header__bg"></div>
@@ -174,12 +174,6 @@
           <section class="section bg-greyBg">
             <h2 class="section__title title-80" data-scroll-animate="appear">Комплекс услуг под ключ</h2>
             <div class="section__content">
-              <div class="services-complex__all" data-scroll-animate="appear"><a class="button-text-icon link-line text-blueText" href="#"><span class="button-text-icon__text link-18">все услуги</span><span class="button-text-icon__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
-                      <path class="stroke-white" d="M14 6.43031L20.07 12.5003L14 18.5703" stroke="#3526EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path>
-                      <path class="stroke-white" d="M3.5 12.5L19.33 12.5" stroke="#3526EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
-                    </svg></span></a>
-              </div>
               <div class="services-complex" data-scroll-animate="appear">
                 <div class="service-highlight">
                   <div class="service-highlight__bg">
@@ -316,6 +310,8 @@
                       <source class="lazyload" type="image/png" srcset="images/service-card-5.png"/><img class="picture__img lazyload" src="images/service-card-5.png" data-src="images/service-card-5.png" alt="service-card-5.png"/>
                     </picture>
                   </div></a>
+                <div class="services-complex__all" data-scroll-animate="appear"><a class="button link-18 button--hyperion uppercase wide" href="#"><span><span>все услуги</span></span></a>
+                </div>
               </div>
             </div>
           </section>
@@ -485,10 +481,10 @@
             </div>
           </section>
           <div class="gap-screen flex flex-col">
-            <section class="section black pt-15 sticky_limited mt-screen sticky z-0 pb-5">
-              <h2 class="section__title title-80" data-scroll-animate="appear">Страны и сроки</h2>
+            <section class="section black pt-15 sticky_limited mt-screen sticky z-0 pb-5" data-scroll-animate="appear">
+              <h2 class="section__title title-80">Страны и сроки</h2>
               <div class="section__content">
-                <div class="countries-terms" data-scroll-animate="appear">
+                <div class="countries-terms">
                   <div class="countries-terms__map text-whiteText">
                     <div class="countries-terms__map-inner">
                       <picture class="picture">
@@ -806,23 +802,22 @@
                 <div class="section__content">
                   <div class="turnkey-work" data-scroll-animate="appear">
                     <div class="turnkey-work__cards">
-                      <div class="stage-card bg-greyBg">
-                        <div class="stage-card__title title-36">Согласование с поставщиком</div>
-                        <div class="stage-card__bottom">
+                      <div class="stage-card picture">
+                        <div class="stage-card__bg">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/turnkey-work-0.webp"/>
+                            <source class="lazyload" type="image/png" srcset="images/turnkey-work-0.png"/><img class="picture__img lazyload" src="images/turnkey-work-0.png" data-src="images/turnkey-work-0.png" alt="turnkey-work-0.png"/>
+                          </picture>
+                        </div>
+                        <header class="stage-card__header">
+                          <h3 class="stage-card__title title-36">Запрос поставщику — бесплатно</h3>
                           <div class="stage-card__counter link-16 bg-whiteBg">–01</div>
-                          <div class="stage-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewbox="0 0 120 120" fill="none">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M16 6.5H15.5V7V101V101.213L15.6532 101.36L29.1532 114.36L29.2984 114.5H29.5H103H103.5V114V7V6.5H103H16ZM16.5 100.5V7.5H102.5V113.5H30V101V100.5H29.5H16.5ZM17.2401 101.5L29 112.824V101.5H17.2401ZM82 40C82 52.1503 72.1503 62 60 62C47.8497 62 38 52.1503 38 40C38 27.8497 47.8497 18 60 18C72.1503 18 82 27.8497 82 40ZM83 40C83 52.7025 72.7025 63 60 63C47.2975 63 37 52.7025 37 40C37 27.2975 47.2975 17 60 17C72.7025 17 83 27.2975 83 40ZM71.8536 32.3536L55.8536 48.3536L55.5 48.7071L55.1464 48.3536L48.6464 41.8536L49.3536 41.1464L55.5 47.2929L71.1464 31.6464L71.8536 32.3536ZM26 72V73H94V72H26ZM37 81V80H83V81H37ZM48 88V89H72V88H48Z" fill="url(#paint0_linear_45_1562)"></path>
-                              <defs>
-                                <lineargradient id="paint0_linear_45_1562" x1="59.5" y1="6.5" x2="59.5" y2="114.5" gradientunits="userSpaceOnUse">
-                                  <stop stop-color="#3526EB"></stop>
-                                  <stop offset="0.27"></stop>
-                                  <stop offset="1" stop-color="#CBCBCB"></stop>
-                                </lineargradient>
-                              </defs>
-                            </svg>
-                          </div>
+                        </header>
+                        <div class="stage-card__icon">
                         </div>
+                        <footer class="stage-card__footer">
+                          <button class="button link-18 button--hyperion uppercase wide"><span><span>отправить</span></span></button>
+                        </footer>
                         <div class="stage-card__step">
                           <div class="divider-item bg-whiteBg">
                             <div class="divider-item__icon">
@@ -833,23 +828,25 @@
                           </div>
                         </div>
                       </div>
-                      <div class="stage-card bg-greyBg">
-                        <div class="stage-card__title title-36">Расчет<br>стоимости</div>
-                        <div class="stage-card__bottom">
+                      <div class="stage-card bg-greyBg black">
+                        <header class="stage-card__header">
+                          <h3 class="stage-card__title title-36">Расчет<br>стоимости</h3>
                           <div class="stage-card__counter link-16 bg-whiteBg">–02</div>
-                          <div class="stage-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewbox="0 0 120 120" fill="none">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M112 8H7V113H112V8ZM7 7H6V8V113V114H7H112H113V113V8V7H112H7ZM14.5 16.5H15H104H104.5V17V42V42.5H104H15H14.5V42V17V16.5ZM15.5 17.5V41.5H103.5V17.5H15.5ZM15 47.5H14.5V48V76.5V105V105.5H15H44H73H104H104.5V105V48V47.5H104H73H44H15ZM15.5 76V48.5H43.5V76H15.5ZM44.5 76V48.5H72.5V76H44.5ZM73.5 76.5V48.5H103.5V104.5H73.5V76.5ZM72.5 77V104.5H44.5V77H72.5ZM43.5 77V104.5H15.5V77H43.5ZM95 74H83V73H95V74ZM53 63H65V62H53V63ZM30 63H24V62H30V56H31V62H37V63H31V69H30V63ZM57.7929 91.5L53.5503 87.2574L54.2574 86.5503L58.5 90.7929L62.7426 86.5503L63.4497 87.2574L59.2071 91.5L63.4497 95.7426L62.7426 96.4498L58.5 92.2071L54.2574 96.4498L53.5503 95.7426L57.7929 91.5ZM37 92H24V91H37V92ZM30 85V89H31V85H30ZM30 98V94H31V98H30ZM83 80H95V79H83V80Z" fill="url(#paint0_linear_45_1514)"></path>
-                              <defs>
-                                <lineargradient id="paint0_linear_45_1514" x1="59.5" y1="7" x2="59.5" y2="114" gradientunits="userSpaceOnUse">
-                                  <stop stop-color="#3526EB"></stop>
-                                  <stop offset="0.27"></stop>
-                                  <stop offset="1" stop-color="#CBCBCB"></stop>
-                                </lineargradient>
-                              </defs>
-                            </svg>
-                          </div>
+                        </header>
+                        <div class="stage-card__icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="187" height="187" viewbox="0 0 187 187" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M175.092 11.9083H10.35V176.65H175.092V11.9083ZM10.35 10.9083H9.34998V11.9083V176.65V177.65H10.35H175.092H176.092V176.65V11.9083V10.9083H175.092H10.35ZM22.875 25.9917H23.375H162.067H162.567V26.4917V65.45V65.95H162.067H23.375H22.875V65.45V26.4917V25.9917ZM23.875 26.9917V64.95H161.567V26.9917H23.875ZM23.375 74.3H22.875V74.8V119.212V163.625V164.125H23.375H68.5666H113.758H162.067H162.567V163.625V74.8V74.3H162.067H113.758H68.5666H23.375ZM23.875 118.712V75.3H68.0666V118.712H23.875ZM69.0666 118.712V75.3H113.258V118.712H69.0666ZM114.258 119.212V75.3H161.567V163.125H114.258V119.212ZM113.258 119.712V163.125H69.0666V119.712H113.258ZM68.0666 119.712V163.125H23.875V119.712H68.0666ZM148.042 115.317H129.342V114.317H148.042V115.317ZM82.5916 98.175H101.292V97.175H82.5916V98.175ZM46.75 98.175H37.4V97.175H46.75V87.2667H47.75V97.175H57.6583V98.175H47.75V107.525H46.75V98.175ZM90.0606 142.587L83.4491 135.976L84.1562 135.269L90.7677 141.88L97.7739 134.874L98.481 135.581L91.4748 142.587L98.481 149.594L97.7739 150.301L90.7677 143.295L84.1562 149.906L83.4491 149.199L90.0606 142.587ZM57.6583 143.367H37.4V142.367H57.6583V143.367ZM46.75 132.458V138.692H47.75V132.458H46.75ZM46.75 152.717V146.483H47.75V152.717H46.75ZM129.342 124.667H148.042V123.667H129.342V124.667Z" fill="url(#paint0_linear_330_5909)"></path>
+                            <defs>
+                              <lineargradient id="paint0_linear_330_5909" x1="92.7208" y1="10.9083" x2="92.7208" y2="177.65" gradientunits="userSpaceOnUse">
+                                <stop stop-color="#3526EB"></stop>
+                                <stop offset="0.27" stop-color="#686868"></stop>
+                                <stop offset="1" stop-color="#1A1A1A"></stop>
+                              </lineargradient>
+                            </defs>
+                          </svg>
                         </div>
+                        <footer class="stage-card__footer"><a class="button link-18 button--hyperion uppercase wide" href="#"><span><span>калькулятор</span></span></a>
+                        </footer>
                         <div class="stage-card__step">
                           <div class="divider-item bg-whiteBg">
                             <div class="divider-item__icon">
@@ -861,21 +858,21 @@
                         </div>
                       </div>
                       <div class="stage-card bg-greyBg">
-                        <div class="stage-card__title title-36">Заключение<br>договора</div>
-                        <div class="stage-card__bottom">
+                        <header class="stage-card__header">
+                          <h3 class="stage-card__title title-36">Заключение<br>договора</h3>
                           <div class="stage-card__counter link-16 bg-whiteBg">–03</div>
-                          <div class="stage-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewbox="0 0 120 120" fill="none">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3104 1.21423H24.8104H108.787H109.287V1.71423V106.26V106.76H108.787H95.6901V118.286V118.786H95.1901H11.2133H10.7133V118.286V13.74V13.24H11.2133H24.3104V1.71423V1.21423ZM25.3104 2.21423V105.76H108.287V2.21423H25.3104ZM11.7133 14.24V117.786H94.6901V106.76H24.8097H24.3097V106.26V14.24H11.7133ZM81.3717 17.5342H80.8717V18.0342V33.7456V34.2456H81.3717H98.8148H99.3148V33.7456V18.0342V17.5342H98.8148H81.3717ZM81.8717 33.2456V18.5342H98.3148V33.2456H81.8717ZM34.9595 17.5342H35.4595H66.0448H66.5448V18.5342H66.0448H35.4595H34.9595V17.5342ZM35.4595 32.3799H34.9595V33.3799H35.4595H66.0448H66.5448V32.3799H66.0448H35.4595ZM35.5678 43.8913H36.0678H97.0328H97.5328V44.8913H97.0328H36.0678H35.5678V43.8913ZM36.0678 59.0027H35.5678V60.0027H36.0678H97.0328H97.5328V59.0027H97.0328H36.0678ZM35.5678 74.1056H36.0678H97.0328H97.5328V75.1056H97.0328H36.0678H35.5678V74.1056ZM36.0678 89.217H35.5678V90.217H36.0678H97.0328H97.5328V89.217H97.0328H36.0678Z" fill="url(#paint0_linear_45_1463)"></path>
-                              <defs>
-                                <lineargradient id="paint0_linear_45_1463" x1="60.0002" y1="1.21423" x2="60.0002" y2="118.786" gradientunits="userSpaceOnUse">
-                                  <stop stop-color="#3526EB"></stop>
-                                  <stop offset="0.27"></stop>
-                                  <stop offset="1" stop-color="#CBCBCB"></stop>
-                                </lineargradient>
-                              </defs>
-                            </svg>
-                          </div>
+                        </header>
+                        <div class="stage-card__icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewbox="0 0 120 120" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3104 1.21423H24.8104H108.787H109.287V1.71423V106.26V106.76H108.787H95.6901V118.286V118.786H95.1901H11.2133H10.7133V118.286V13.74V13.24H11.2133H24.3104V1.71423V1.21423ZM25.3104 2.21423V105.76H108.287V2.21423H25.3104ZM11.7133 14.24V117.786H94.6901V106.76H24.8097H24.3097V106.26V14.24H11.7133ZM81.3717 17.5342H80.8717V18.0342V33.7456V34.2456H81.3717H98.8148H99.3148V33.7456V18.0342V17.5342H98.8148H81.3717ZM81.8717 33.2456V18.5342H98.3148V33.2456H81.8717ZM34.9595 17.5342H35.4595H66.0448H66.5448V18.5342H66.0448H35.4595H34.9595V17.5342ZM35.4595 32.3799H34.9595V33.3799H35.4595H66.0448H66.5448V32.3799H66.0448H35.4595ZM35.5678 43.8913H36.0678H97.0328H97.5328V44.8913H97.0328H36.0678H35.5678V43.8913ZM36.0678 59.0027H35.5678V60.0027H36.0678H97.0328H97.5328V59.0027H97.0328H36.0678ZM35.5678 74.1056H36.0678H97.0328H97.5328V75.1056H97.0328H36.0678H35.5678V74.1056ZM36.0678 89.217H35.5678V90.217H36.0678H97.0328H97.5328V89.217H97.0328H36.0678Z" fill="url(#paint0_linear_45_1463)"></path>
+                            <defs>
+                              <lineargradient id="paint0_linear_45_1463" x1="60.0002" y1="1.21423" x2="60.0002" y2="118.786" gradientunits="userSpaceOnUse">
+                                <stop stop-color="#3526EB"></stop>
+                                <stop offset="0.27"></stop>
+                                <stop offset="1" stop-color="#CBCBCB"></stop>
+                              </lineargradient>
+                            </defs>
+                          </svg>
                         </div>
                         <div class="stage-card__step">
                           <div class="divider-item bg-whiteBg">
@@ -888,21 +885,21 @@
                         </div>
                       </div>
                       <div class="stage-card bg-greyBg">
-                        <div class="stage-card__title title-36">Закупка<br>и&nbsp;доставка</div>
-                        <div class="stage-card__bottom">
+                        <header class="stage-card__header">
+                          <h3 class="stage-card__title title-36">Закупка<br>и&nbsp;доставка</h3>
                           <div class="stage-card__counter link-16 bg-whiteBg">–04</div>
-                          <div class="stage-card__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewbox="0 0 120 120" fill="none">
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M118 20H92.5V57V57.5H92H58H57.5V57V20H32V100H118V20ZM92.5 19H91.5H58.5H57.5H32H31V20V100V101H32H118H119V100V20V19H118H92.5ZM91.5 20H58.5V56.5H91.5V20ZM28 27L1 27V28L28 28V27ZM6 35L28 35V36L6 36V35ZM28 43L12 43V44L28 44V43Z" fill="url(#paint0_linear_45_1592)"></path>
-                              <defs>
-                                <lineargradient id="paint0_linear_45_1592" x1="60" y1="19" x2="60" y2="101" gradientunits="userSpaceOnUse">
-                                  <stop stop-color="#3526EB"></stop>
-                                  <stop offset="0.27"></stop>
-                                  <stop offset="1" stop-color="#CBCBCB"></stop>
-                                </lineargradient>
-                              </defs>
-                            </svg>
-                          </div>
+                        </header>
+                        <div class="stage-card__icon">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewbox="0 0 120 120" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M118 20H92.5V57V57.5H92H58H57.5V57V20H32V100H118V20ZM92.5 19H91.5H58.5H57.5H32H31V20V100V101H32H118H119V100V20V19H118H92.5ZM91.5 20H58.5V56.5H91.5V20ZM28 27L1 27V28L28 28V27ZM6 35L28 35V36L6 36V35ZM28 43L12 43V44L28 44V43Z" fill="url(#paint0_linear_45_1592)"></path>
+                            <defs>
+                              <lineargradient id="paint0_linear_45_1592" x1="60" y1="19" x2="60" y2="101" gradientunits="userSpaceOnUse">
+                                <stop stop-color="#3526EB"></stop>
+                                <stop offset="0.27"></stop>
+                                <stop offset="1" stop-color="#CBCBCB"></stop>
+                              </lineargradient>
+                            </defs>
+                          </svg>
                         </div>
                         <div class="stage-card__step">
                           <div class="divider-item bg-whiteBg">
@@ -919,16 +916,10 @@
                 </div>
               </section>
               <section class="section z-2 bg-greyBg pb-0">
-                <h2 class="section__title title-80" data-scroll-animate="appear">Кейсы клиентов</h2>
+                <h2 class="section__title title-80" data-scroll-animate="appear">Отзывы клиентов</h2>
                 <div class="section__content">
                   <div class="clients-cases" data-scroll-animate="appear">
                     <div class="clients-cases__top">
-                      <div class="clients-cases__show-more"><a class="button-text-icon link-line text-blueText" href="#"><span class="button-text-icon__text link-18">больше кейсов</span><span class="button-text-icon__icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
-                              <path class="stroke-white" d="M14 6.43031L20.07 12.5003L14 18.5703" stroke="#3526EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path>
-                              <path class="stroke-white" d="M3.5 12.5L19.33 12.5" stroke="#3526EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
-                            </svg></span></a>
-                      </div>
                       <div class="clients-cases__slider-buttons desktop">
                         <button class="slider-button button--hyperion white bg-whiteBg" data-slider-prev="clients-cases"><span><span class="slider-button__icon">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
@@ -1052,10 +1043,10 @@
                                   </div>
                                 </div>
                                 <div class="client-card__content-bottom">
-                                  <div class="button-text-icon link-line text-blueText reverse pointer-events-none"><span class="button-text-icon__text link-18">подробнее <br class="devices">в телеграм-канале</span><span class="button-text-icon__icon">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                                        <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#3526EB"></path>
-                                      </svg></span></div>
+                                  <div class="button-icon button--hyperion button"><span class="button-icon__inner"><span class="button-icon__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                          <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                                        </svg></span><span class="button-icon__text link-18 uppercase">подробнее <br class="devices">в телеграм-канале</span></span></div>
                                 </div>
                               </div></a>
                           </div>
@@ -1162,10 +1153,10 @@
                                   </div>
                                 </div>
                                 <div class="client-card__content-bottom">
-                                  <div class="button-text-icon link-line text-blueText reverse pointer-events-none"><span class="button-text-icon__text link-18">подробнее <br class="devices">в телеграм-канале</span><span class="button-text-icon__icon">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                                        <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#3526EB"></path>
-                                      </svg></span></div>
+                                  <div class="button-icon button--hyperion button"><span class="button-icon__inner"><span class="button-icon__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                          <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                                        </svg></span><span class="button-icon__text link-18 uppercase">подробнее <br class="devices">в телеграм-канале</span></span></div>
                                 </div>
                               </div></a>
                           </div>
@@ -1272,10 +1263,10 @@
                                   </div>
                                 </div>
                                 <div class="client-card__content-bottom">
-                                  <div class="button-text-icon link-line text-blueText reverse pointer-events-none"><span class="button-text-icon__text link-18">подробнее <br class="devices">в телеграм-канале</span><span class="button-text-icon__icon">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                                        <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#3526EB"></path>
-                                      </svg></span></div>
+                                  <div class="button-icon button--hyperion button"><span class="button-icon__inner"><span class="button-icon__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                          <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                                        </svg></span><span class="button-icon__text link-18 uppercase">подробнее <br class="devices">в телеграм-канале</span></span></div>
                                 </div>
                               </div></a>
                           </div>
@@ -1382,10 +1373,10 @@
                                   </div>
                                 </div>
                                 <div class="client-card__content-bottom">
-                                  <div class="button-text-icon link-line text-blueText reverse pointer-events-none"><span class="button-text-icon__text link-18">подробнее <br class="devices">в телеграм-канале</span><span class="button-text-icon__icon">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                                        <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#3526EB"></path>
-                                      </svg></span></div>
+                                  <div class="button-icon button--hyperion button"><span class="button-icon__inner"><span class="button-icon__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                          <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                                        </svg></span><span class="button-icon__text link-18 uppercase">подробнее <br class="devices">в телеграм-канале</span></span></div>
                                 </div>
                               </div></a>
                           </div>
@@ -1492,10 +1483,10 @@
                                   </div>
                                 </div>
                                 <div class="client-card__content-bottom">
-                                  <div class="button-text-icon link-line text-blueText reverse pointer-events-none"><span class="button-text-icon__text link-18">подробнее <br class="devices">в телеграм-канале</span><span class="button-text-icon__icon">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                                        <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#3526EB"></path>
-                                      </svg></span></div>
+                                  <div class="button-icon button--hyperion button"><span class="button-icon__inner"><span class="button-icon__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                          <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                                        </svg></span><span class="button-icon__text link-18 uppercase">подробнее <br class="devices">в телеграм-канале</span></span></div>
                                 </div>
                               </div></a>
                           </div>
@@ -1602,82 +1593,44 @@
                                   </div>
                                 </div>
                                 <div class="client-card__content-bottom">
-                                  <div class="button-text-icon link-line text-blueText reverse pointer-events-none"><span class="button-text-icon__text link-18">подробнее <br class="devices">в телеграм-канале</span><span class="button-text-icon__icon">
-                                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                                        <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#3526EB"></path>
-                                      </svg></span></div>
+                                  <div class="button-icon button--hyperion button"><span class="button-icon__inner"><span class="button-icon__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                          <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                                        </svg></span><span class="button-icon__text link-18 uppercase">подробнее <br class="devices">в телеграм-канале</span></span></div>
                                 </div>
                               </div></a>
                           </div>
+                          <div class="swiper-slide"><a class="clients-cases__more bg-blueBg text-whiteText" href="https://t.me/Shopium" target="_blank">
+                              <div class="clients-cases__more-title title-32 text-whiteText">Больше кейсов в нашем Телеграм-канале</div>
+                              <div class="clients-cases__more-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="147" height="147" viewbox="0 0 147 147" fill="none">
+                                  <g clip-path="url(#clip0_329_5518)">
+                                    <path d="M100.9 49.9842L91.4516 97.5079C91.4516 97.5079 90.1296 100.803 86.4981 99.2226L64.6988 82.546L64.5977 82.4969C67.5423 79.8588 90.3759 59.3752 91.3738 58.4467C92.9187 57.0087 91.9596 56.1526 90.1659 57.2389L56.4379 78.6096L43.4257 74.2413C43.4257 74.2413 41.378 73.5146 41.181 71.9344C40.9814 70.3515 43.4931 69.4954 43.4931 69.4954L96.5398 48.7325C96.5398 48.7325 100.9 46.8212 100.9 49.9842Z" fill="white"></path>
+                                    <circle cx="73.5" cy="73.5" r="73" stroke="url(#paint0_linear_329_5518)"></circle>
+                                  </g>
+                                  <defs>
+                                    <lineargradient id="paint0_linear_329_5518" x1="73.5" y1="0" x2="73.5" y2="147" gradientunits="userSpaceOnUse">
+                                      <stop stop-color="white"></stop>
+                                      <stop offset="1" stop-color="white" stop-opacity="0.09"></stop>
+                                    </lineargradient>
+                                    <clippath id="clip0_329_5518">
+                                      <rect width="147" height="147" fill="white"></rect>
+                                    </clippath>
+                                  </defs>
+                                </svg>
+                              </div>
+                              <div class="clients-cases__more-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                                  <path class="stroke-white" d="M14 6.43031L20.07 12.5003L14 18.5703" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                  <path class="stroke-white" d="M3.5 12.5L19.33 12.5" stroke="#ffffff" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
+                                </svg>
+                              </div></a></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </section>
-              <section class="section bg-greyBg">
-                <h2 class="section__title title-80" data-scroll-animate="appear">Отзывы клиентов</h2>
-                <div class="section__content">
-                  <div class="clients-reviews__all" data-scroll-animate="appear">
-                    <div class="clients-reviews__show-more"><a class="button-text-icon link-line text-blueText" href="#"><span class="button-text-icon__text link-18">больше отзывов</span><span class="button-text-icon__icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
-                            <path class="stroke-white" d="M14 6.43031L20.07 12.5003L14 18.5703" stroke="#3526EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path>
-                            <path class="stroke-white" d="M3.5 12.5L19.33 12.5" stroke="#3526EB" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
-                          </svg></span></a>
-                    </div>
-                  </div>
-                  <div class="clients-reviews">
-                    <div class="clients-reviews__reviews" data-scroll-animate="appear">
-                      <div class="review-card bg-whiteBg">
-                        <div class="review-card__top">
-                          <div class="review-card__name link-18 text-greyText">Павел Опришко</div>
-                          <div class="review-card__divider bg-greyText"></div>
-                          <div class="review-card__date link-18 text-greyText">25.12.2024</div>
-                        </div>
-                        <div class="review-card__text text-24">Первый раз пользовалась Shopium, и осталась в восторге! Простая регистрация, прозрачные цены и идеальный сервис.</div>
-                      </div>
-                      <div class="review-card bg-whiteBg">
-                        <div class="review-card__top">
-                          <div class="review-card__name link-18 text-greyText">виктор васильев</div>
-                          <div class="review-card__divider bg-greyText"></div>
-                          <div class="review-card__date link-18 text-greyText">25.12.2024</div>
-                        </div>
-                        <div class="review-card__text text-24">Доставка с Shopium — это приятно. Все товары пришли в отличном состоянии, следить за заказом было легко. Доставка с Shopium — это приятно. Все товары пришли в отличном состоянии, следить за заказом было легко.</div>
-                      </div>
-                      <div class="review-card bg-whiteBg">
-                        <div class="review-card__top">
-                          <div class="review-card__name link-18 text-greyText">гарсон попусков</div>
-                          <div class="review-card__divider bg-greyText"></div>
-                          <div class="review-card__date link-18 text-greyText">25.12.2024</div>
-                        </div>
-                        <div class="review-card__text text-24">Спасибо Shopium за отличный сервис! Больше не переживаю, заказывая из-за границы.</div>
-                      </div>
-                      <div class="review-card bg-whiteBg devices">
-                        <div class="review-card__top">
-                          <div class="review-card__name link-18 text-greyText">гарсон попусков</div>
-                          <div class="review-card__divider bg-greyText"></div>
-                          <div class="review-card__date link-18 text-greyText">25.12.2024</div>
-                        </div>
-                        <div class="review-card__text text-24">Спасибо Shopium за отличный сервис! Больше не переживаю, заказывая из-за границы.</div>
-                      </div>
-                      <div class="review-card bg-whiteBg devices">
-                        <div class="review-card__top">
-                          <div class="review-card__name link-18 text-greyText">гарсон попусков</div>
-                          <div class="review-card__divider bg-greyText"></div>
-                          <div class="review-card__date link-18 text-greyText">25.12.2024</div>
-                        </div>
-                        <div class="review-card__text text-24">Спасибо Shopium за отличный сервис! Больше не переживаю, заказывая из-за границы.</div>
-                      </div>
-                      <div class="review-card bg-whiteBg devices">
-                        <div class="review-card__top">
-                          <div class="review-card__name link-18 text-greyText">гарсон попусков</div>
-                          <div class="review-card__divider bg-greyText"></div>
-                          <div class="review-card__date link-18 text-greyText">25.12.2024</div>
-                        </div>
-                        <div class="review-card__text text-24">Спасибо Shopium за отличный сервис! Больше не переживаю, заказывая из-за границы.</div>
-                      </div>
-                    </div>
-                    <div class="clients-reviews__aggregators" data-scroll-animate="appear"><a class="aggregator-review bg-whiteBg" href="#">
+                  <div class="clients-reviews" data-scroll-animate="appear">
+                    <div class="clients-reviews__aggregators"><a class="aggregator-review bg-whiteBg" href="#">
                         <div class="aggregator-review__name">
                           <div class="aggregator-review__name-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewbox="0 0 78 78" fill="none">
@@ -1856,68 +1809,80 @@
                   </div>
                 </div>
               </section>
-              <div class="form-section">
-                <div class="form-section__inner bg-blackBg">
-                  <div class="form-section__head" data-scroll-animate="appear">
-                    <div class="form-section__bg desktop"></div>
-                    <div class="form-section__text">
-                      <div class="form-section__title title-80 text-whiteText">Получите расчет</div>
-                      <div class="form-section__subtitle text-24 text-whiteText">Оставьте контактные данные и получите экспресс-расчет по вашему запросу</div>
+              <div class="form-section-photo bg-blackBg">
+                <div class="form-section-photo__content" data-scroll-animate="appear">
+                  <div class="form-section__text form-section-photo__text">
+                    <h2 class="form-section__title form-section-photo__title title-80 text-whiteText">Получите расчет</h2>
+                    <div class="form-section__subtitle form-section-photo__subtitle text-24 text-whiteText">Оставьте контактные данные и получите экспресс-расчет по вашему запросу</div>
+                  </div>
+                  <form class="form-section-photo__form" id="get-quote-form" action="" novalidate="" data-validate="form">
+                    <div class="form-section__form-inputs form-section-photo__form-inputs">
+                      <div class="form-section__form-input">
+                        <div class="input-ui__wrapper" data-input-wrapper="">
+                          <div class="input-ui custom-placeholder" data-input-parent="">
+                            <input data-input="" name="name" placeholder="Ваше имя" required="" autocomplete="given-name" minlength="2" maxlength="50" data-validate="name"/>
+                            <div class="custom-placeholder__service"><span>Ваше имя</span>
+                            </div>
+                          </div>
+                          <div class="input-ui__error text-16" data-error-container=""></div>
+                        </div>
+                      </div>
+                      <div class="form-section__form-input">
+                        <div class="input-ui__wrapper" data-input-wrapper="">
+                          <div class="input-ui custom-placeholder" data-input-parent="">
+                            <input data-input="" name="phone" placeholder="Телефон" required="" autocomplete="tel" data-mask-phone="" data-validate="tel"/>
+                            <div class="custom-placeholder__service"><span>Телефон</span>
+                            </div>
+                          </div>
+                          <div class="input-ui__error text-16" data-error-container=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-section__radios" data-input-wrapper="">
+                      <div class="form-section__radios-inputs">
+                        <label class="radiobutton">
+                          <input type="radio" name="communication" required="" checked=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Перезвоните мне</span>
+                        </label>
+                        <label class="radiobutton">
+                          <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в Telegram</span>
+                        </label>
+                        <label class="radiobutton">
+                          <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в WhatsApp</span>
+                        </label>
+                      </div>
+                      <div class="form-section__radios-error text-16" data-error-container="">Выберите один из вариантов</div>
+                    </div>
+                    <div class="form-section__form-agreement text-16 text-whiteText"><span class="opacity-60">Нажимая на кнопку «Отправить», вы соглашаетесь c&nbsp;</span><a class="link-line text-whiteText" href="#">политикой кофиденциальности</a></div>
+                    <div class="form-section__form-button">
+                      <button class="button link-18 button--hyperion uppercase wide" type="submit" form="get-quote-form"><span><span>Получить расчет</span></span></button>
+                    </div>
+                  </form>
+                  <div class="form-section-photo__contacts">
+                    <div class="call-to-action">
+                      <div class="call-to-action__header">
+                        <div class="call-to-action__blink"></div>
+                        <div class="call-to-action__title title-32 text-whiteText">Или напишите, мы онлайн</div>
+                      </div>
+                      <div class="call-to-action__contacts"><a class="button-icon button--hyperion button tg" href="https://t.me/shopium_help" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                              </svg></span><span class="button-icon__text link-18 uppercase">Telegram</span></span></a><a class="button-icon button--hyperion button wa" href="https://wa.me/79215896284" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                <path class="fill-wa-green fill-white" d="M23.3561 8.63343C21.3993 6.68343 18.7902 5.6001 16.0362 5.6001C10.3108 5.6001 5.67245 10.2223 5.67245 15.9279C5.67245 17.7334 6.17977 19.539 7.04945 21.0557L5.59998 26.4001L11.108 24.9557C12.6299 25.7501 14.2968 26.1834 16.0362 26.1834C21.7616 26.1834 26.4 21.5612 26.4 15.8557C26.3275 13.1834 25.3129 10.5834 23.3561 8.63343ZM21.0369 19.6112C20.8195 20.189 19.8049 20.7668 19.2975 20.839C18.8627 20.9112 18.2829 20.9112 17.7031 20.7668C17.3407 20.6223 16.8334 20.4779 16.2536 20.189C13.6446 19.1057 11.9777 16.5057 11.8327 16.289C11.6878 16.1445 10.7456 14.9168 10.7456 13.6168C10.7456 12.3168 11.3979 11.739 11.6153 11.4501C11.8327 11.1612 12.1226 11.1612 12.34 11.1612C12.485 11.1612 12.7024 11.1612 12.8474 11.1612C12.9923 11.1612 13.2097 11.089 13.4272 11.5945C13.6446 12.1001 14.1519 13.4001 14.2244 13.4723C14.2968 13.6168 14.2968 13.7612 14.2244 13.9057C14.1519 14.0501 14.0794 14.1945 13.9345 14.339C13.7895 14.4834 13.6446 14.7001 13.5721 14.7723C13.4272 14.9168 13.2822 15.0612 13.4272 15.2779C13.5721 15.5668 14.0794 16.3612 14.8766 17.0834C15.8913 17.9501 16.6885 18.239 16.9784 18.3834C17.2683 18.5279 17.4132 18.4557 17.5582 18.3112C17.7031 18.1668 18.2104 17.589 18.3554 17.3001C18.5003 17.0112 18.7177 17.0834 18.9352 17.1557C19.1526 17.2279 20.4571 17.8779 20.6745 18.0223C20.9644 18.1668 21.1094 18.239 21.1819 18.3112C21.2543 18.5279 21.2543 19.0334 21.0369 19.6112Z" fill="#1D1D1D"></path>
+                              </svg></span><span class="button-icon__text link-18 uppercase">WhatsApp</span></span></a>
+                      </div>
                     </div>
                   </div>
-                  <div class="form-section__body" data-scroll-animate="appear">
-                    <form class="form-section__form" id="get-quote-form" novalidate="" data-validate="form">
-                      <div class="form-section__form-inputs">
-                        <div class="form-section__form-input">
-                          <div class="input-ui__wrapper" data-input-wrapper="">
-                            <div class="input-ui custom-placeholder" data-input-parent="">
-                              <input data-input="" name="name" placeholder="Ваше имя" required="" autocomplete="given-name" minlength="2" maxlength="50" data-validate="name"/>
-                              <div class="custom-placeholder__service"><span>Ваше имя</span>
-                              </div>
-                            </div>
-                            <div class="input-ui__error text-16" data-error-container=""></div>
-                          </div>
-                        </div>
-                        <div class="form-section__form-input">
-                          <div class="input-ui__wrapper" data-input-wrapper="">
-                            <div class="input-ui custom-placeholder" data-input-parent="">
-                              <input data-input="" name="phone" placeholder="Телефон" required="" autocomplete="tel" data-mask-phone="" data-validate="tel"/>
-                              <div class="custom-placeholder__service"><span>Телефон</span>
-                              </div>
-                            </div>
-                            <div class="input-ui__error text-16" data-error-container=""></div>
-                          </div>
-                        </div>
-                        <div class="form-section__form-textarea">
-                          <div class="input-ui__wrapper" data-input-wrapper="">
-                            <label class="textarea-ui custom-placeholder" data-input-parent="">
-                              <textarea data-input="" name="comment" placeholder="Ссылки на товары (если есть)"></textarea><span class="custom-placeholder__service"><span>Ссылки на товары (если есть)</span></span>
-                            </label><span class="input-ui__error text-16" data-error-container=""></span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-section__radios" data-input-wrapper="">
-                        <div class="form-section__radios-inputs">
-                          <label class="radiobutton">
-                            <input type="radio" name="communication" required="" checked=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Перезвоните мне</span>
-                          </label>
-                          <label class="radiobutton">
-                            <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в Telegram</span>
-                          </label>
-                          <label class="radiobutton">
-                            <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в WhatsApp</span>
-                          </label>
-                        </div>
-                        <div class="form-section__radios-error text-16" data-error-container="">Выберите один из вариантов</div>
-                      </div>
-                      <div class="form-section__form-submit">
-                        <div class="form-section__form-agreement text-16 text-whiteText opacity-60">Нажимая на кнопку «Отправить», вы соглашаетесь на обработку персональных данных</div>
-                        <div class="form-section__form-button">
-                          <button class="button link-18 button--hyperion uppercase wide" type="submit" form="get-quote-form"><span><span>Отправить</span></span></button>
-                        </div>
-                      </div>
-                    </form>
+                </div>
+                <div class="form-section-photo__photo">
+                  <div class="form-section-photo__photo-founder link-16 bg-whiteBg uppercase">филипп глушенко, основатель сервиса</div>
+                  <div class="form-section-photo__photo-img">
+                    <picture class="picture">
+                      <source class="lazyload" type="image/webp" srcset="webp/form-founder.webp"/>
+                      <source class="lazyload" type="image/jpeg" srcset="images/form-founder.jpg"/><img class="picture__img lazyload" src="webp/form-founder.webp" data-src="images/form-founder.webp" alt="form-founder.webp"/>
+                    </picture>
                   </div>
+                  <div class="form-section-photo__string"></div>
                 </div>
               </div>
             </div>
@@ -1959,22 +1924,120 @@
       </div>
       <footer class="footer">
         <div class="footer__top">
-          <div class="footer__contacts">
-            <div class="footer__contact"><a class="title-48 link-line" href="tel:89215896284" target="_blank">8 921 589-62-84</a></div>
-            <div class="footer__contact"><a class="title-48 link-line" href="mailto:info@shopium-global.ru" target="_blank">info@shopium-global.ru</a></div>
-            <div class="footer__contact"><a class="text-24 link-line" href="https://yandex.ru/maps/?text=Москва,_Садовническая_набережная,_9" target="_blank">Москва, Садовническая набережная, 9</a></div>
+          <div class="footer__contacts" data-scroll-animate="appear">
+            <div class="footer__contacts__title title-80">Наши контакты</div>
+            <div class="footer__contacts__list">
+              <div class="footer__contact"><a class="footer-contact-link" href="https://yandex.ru/maps/?text=Москва,_Садовническая_набережная,_9" target="_blank">
+                  <div class="footer-contact-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="fill-dark-blue" fill-rule="evenodd" clip-rule="evenodd" d="M16 29.2153L16.7673 28.5453C23.2201 22.9108 26.5 17.9911 26.5 13.6665C26.5 7.54228 21.7201 3.1665 16 3.1665C10.2799 3.1665 5.5 7.54228 5.5 13.6665C5.5 17.9911 8.77986 22.9108 15.2326 28.5453L16 29.2153ZM16 26.1071C10.5244 21.1723 7.83333 16.9906 7.83333 13.6665C7.83333 8.87921 11.5248 5.49984 16 5.49984C20.4752 5.49984 24.1667 8.87921 24.1667 13.6665C24.1667 16.9906 21.4756 21.1723 16 26.1071ZM16 7.83317C19.2217 7.83317 21.8333 10.4448 21.8333 13.6665C21.8333 16.8882 19.2217 19.4998 16 19.4998C12.7783 19.4998 10.1667 16.8882 10.1667 13.6665C10.1667 10.4448 12.7783 7.83317 16 7.83317ZM12.5 13.6665C12.5 11.7335 14.067 10.1665 16 10.1665C17.933 10.1665 19.5 11.7335 19.5 13.6665C19.5 15.5995 17.933 17.1665 16 17.1665C14.067 17.1665 12.5 15.5995 12.5 13.6665Z" fill="#3526EB"></path>
+                    </svg>
+                  </div>
+                  <div class="footer-contact-link__text text-24 text-blackText">Москва, Садовническая набережная,&nbsp;9</div></a>
+              </div>
+              <div class="footer__contact"><a class="phone-link" href="tel:89215896284">
+                  <div class="phone-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="fill-dark-blue" d="M15.4889 22.1583L10.3265 17.0828L15.0116 12.4063L9.06848 4.52832L4.53076 9.05715L5.00797 15.5036L17.4151 27.6936L23.4884 27.9799L28 23.4597L20.122 17.5166L15.4889 22.1583Z" fill="white"></path>
+                      <path class="fill-dark-blue" d="M24.848 15.6427L27.4367 15.3813C26.8858 9.90989 22.5672 5.47406 17.1674 4.83105L16.8605 7.41548C21.0576 7.91545 24.4164 11.374 24.847 15.6416L24.848 15.6427Z" fill="white"></path>
+                      <path class="fill-dark-blue" d="M20.293 15.7125L22.8655 15.3123C22.4078 12.3688 20.1531 10.0286 17.2542 9.48633L16.7759 12.0447C18.5914 12.3842 20.0045 13.8569 20.2919 15.7126L20.293 15.7125Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="phone-link__text title-28 uppercase">8 921 589-62-84</div></a>
+              </div>
+              <div class="footer__contact"><a class="footer-contact-link" href="mailto:info@shopium-global.ru" target="_blank">
+                  <div class="footer-contact-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="fill-dark-blue" fill-rule="evenodd" clip-rule="evenodd" d="M5.49996 5.5H26.5C27.7886 5.5 28.8333 6.54467 28.8333 7.83333V24.1667C28.8333 25.4553 27.7886 26.5 26.5 26.5H5.49996C4.21129 26.5 3.16663 25.4553 3.16663 24.1667V7.83333C3.16663 6.54467 4.21129 5.5 5.49996 5.5ZM5.49996 13.2211V24.1667H26.5V13.2216L15.9999 18.4716L5.49996 13.2211ZM5.49996 10.6123L16 15.8629L26.5 10.6129V7.83333H5.49996V10.6123Z" fill="#3526EB"></path>
+                    </svg>
+                  </div>
+                  <div class="footer-contact-link__text text-24 text-blackText">info@shopium-global.ru</div></a>
+              </div>
+              <div class="footer__contact">
+                <div class="footer-contact-link">
+                  <div class="footer-contact-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="fill-dark-blue" fill-rule="evenodd" clip-rule="evenodd" d="M16 28.8332C8.9123 28.8332 3.16663 23.0875 3.16663 15.9998C3.16663 8.91218 8.9123 3.1665 16 3.1665C23.0876 3.1665 28.8333 8.91218 28.8333 15.9998C28.8333 23.0875 23.0876 28.8332 16 28.8332ZM16 26.4998C21.799 26.4998 26.5 21.7988 26.5 15.9998C26.5 10.2008 21.799 5.49984 16 5.49984C10.201 5.49984 5.49996 10.2008 5.49996 15.9998C5.49996 21.7988 10.201 26.4998 16 26.4998ZM21.8333 14.8332H17.1666V8.99984H14.8333V17.1665H21.8333V14.8332Z" fill="#3526EB"></path>
+                    </svg>
+                  </div>
+                  <div class="footer-contact-link__text text-24">Пн-Пт: 9:00 – 18:00<br>Сб-Вс — выходные</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__socials">
+              <div class="call-to-action">
+                <div class="call-to-action__header">
+                  <div class="call-to-action__blink"></div>
+                  <div class="call-to-action__title title-32 text-whiteText">Напишите нам, мы онлайн</div>
+                </div>
+                <div class="call-to-action__contacts"><a class="button-icon button--hyperion button tg" href="https://t.me/shopium_help" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                          <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                        </svg></span><span class="button-icon__text link-18 uppercase">Telegram</span></span></a><a class="button-icon button--hyperion button wa" href="https://wa.me/79215896284" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                          <path class="fill-wa-green fill-white" d="M23.3561 8.63343C21.3993 6.68343 18.7902 5.6001 16.0362 5.6001C10.3108 5.6001 5.67245 10.2223 5.67245 15.9279C5.67245 17.7334 6.17977 19.539 7.04945 21.0557L5.59998 26.4001L11.108 24.9557C12.6299 25.7501 14.2968 26.1834 16.0362 26.1834C21.7616 26.1834 26.4 21.5612 26.4 15.8557C26.3275 13.1834 25.3129 10.5834 23.3561 8.63343ZM21.0369 19.6112C20.8195 20.189 19.8049 20.7668 19.2975 20.839C18.8627 20.9112 18.2829 20.9112 17.7031 20.7668C17.3407 20.6223 16.8334 20.4779 16.2536 20.189C13.6446 19.1057 11.9777 16.5057 11.8327 16.289C11.6878 16.1445 10.7456 14.9168 10.7456 13.6168C10.7456 12.3168 11.3979 11.739 11.6153 11.4501C11.8327 11.1612 12.1226 11.1612 12.34 11.1612C12.485 11.1612 12.7024 11.1612 12.8474 11.1612C12.9923 11.1612 13.2097 11.089 13.4272 11.5945C13.6446 12.1001 14.1519 13.4001 14.2244 13.4723C14.2968 13.6168 14.2968 13.7612 14.2244 13.9057C14.1519 14.0501 14.0794 14.1945 13.9345 14.339C13.7895 14.4834 13.6446 14.7001 13.5721 14.7723C13.4272 14.9168 13.2822 15.0612 13.4272 15.2779C13.5721 15.5668 14.0794 16.3612 14.8766 17.0834C15.8913 17.9501 16.6885 18.239 16.9784 18.3834C17.2683 18.5279 17.4132 18.4557 17.5582 18.3112C17.7031 18.1668 18.2104 17.589 18.3554 17.3001C18.5003 17.0112 18.7177 17.0834 18.9352 17.1557C19.1526 17.2279 20.4571 17.8779 20.6745 18.0223C20.9644 18.1668 21.1094 18.239 21.1819 18.3112C21.2543 18.5279 21.2543 19.0334 21.0369 19.6112Z" fill="#1D1D1D"></path>
+                        </svg></span><span class="button-icon__text link-18 uppercase">WhatsApp</span></span></a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="footer__socials"><a class="button-icon button--hyperion white bg-greyLinkBg" href="https://t.me/shopium_help" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                    <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
-                  </svg></span><span class="button-icon__text link-18 uppercase">Telegram</span></span></a><a class="button-icon button--hyperion white bg-greyLinkBg" href="https://wa.me/79215896284" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                    <path class="fill-wa-green fill-white" d="M23.3561 8.63343C21.3993 6.68343 18.7902 5.6001 16.0362 5.6001C10.3108 5.6001 5.67245 10.2223 5.67245 15.9279C5.67245 17.7334 6.17977 19.539 7.04945 21.0557L5.59998 26.4001L11.108 24.9557C12.6299 25.7501 14.2968 26.1834 16.0362 26.1834C21.7616 26.1834 26.4 21.5612 26.4 15.8557C26.3275 13.1834 25.3129 10.5834 23.3561 8.63343ZM21.0369 19.6112C20.8195 20.189 19.8049 20.7668 19.2975 20.839C18.8627 20.9112 18.2829 20.9112 17.7031 20.7668C17.3407 20.6223 16.8334 20.4779 16.2536 20.189C13.6446 19.1057 11.9777 16.5057 11.8327 16.289C11.6878 16.1445 10.7456 14.9168 10.7456 13.6168C10.7456 12.3168 11.3979 11.739 11.6153 11.4501C11.8327 11.1612 12.1226 11.1612 12.34 11.1612C12.485 11.1612 12.7024 11.1612 12.8474 11.1612C12.9923 11.1612 13.2097 11.089 13.4272 11.5945C13.6446 12.1001 14.1519 13.4001 14.2244 13.4723C14.2968 13.6168 14.2968 13.7612 14.2244 13.9057C14.1519 14.0501 14.0794 14.1945 13.9345 14.339C13.7895 14.4834 13.6446 14.7001 13.5721 14.7723C13.4272 14.9168 13.2822 15.0612 13.4272 15.2779C13.5721 15.5668 14.0794 16.3612 14.8766 17.0834C15.8913 17.9501 16.6885 18.239 16.9784 18.3834C17.2683 18.5279 17.4132 18.4557 17.5582 18.3112C17.7031 18.1668 18.2104 17.589 18.3554 17.3001C18.5003 17.0112 18.7177 17.0834 18.9352 17.1557C19.1526 17.2279 20.4571 17.8779 20.6745 18.0223C20.9644 18.1668 21.1094 18.239 21.1819 18.3112C21.2543 18.5279 21.2543 19.0334 21.0369 19.6112Z" fill="#1D1D1D"></path>
-                  </svg></span><span class="button-icon__text link-18 uppercase">WhatsApp</span></span></a>
+          <div class="footer__galleries">
+            <div class="footer__gallery" data-scroll-animate="appear">
+              <div class="footer__gallery-title title-32">Офис</div>
+              <div class="footer__gallery-images">
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-1.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-1.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-1.webp" data-src="images/footer-gallery-1.webp" alt="footer-gallery-1.webp"/>
+                  </picture>
+                </div>
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-2.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-2.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-2.webp" data-src="images/footer-gallery-2.webp" alt="footer-gallery-2.webp"/>
+                  </picture>
+                </div>
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-3.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-3.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-3.webp" data-src="images/footer-gallery-3.webp" alt="footer-gallery-3.webp"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="footer__gallery" data-scroll-animate="appear">
+              <div class="footer__gallery-title title-32">Склад</div>
+              <div class="footer__gallery-images">
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-4.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-4.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-4.webp" data-src="images/footer-gallery-4.webp" alt="footer-gallery-4.webp"/>
+                  </picture>
+                </div>
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-5.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-5.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-5.webp" data-src="images/footer-gallery-5.webp" alt="footer-gallery-5.webp"/>
+                  </picture>
+                </div>
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-6.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-6.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-6.webp" data-src="images/footer-gallery-6.webp" alt="footer-gallery-6.webp"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__map" data-scroll-animate="appear">
+            <div class="footer__map-title title-32">Адрес офиса</div>
+            <div class="bg-greyBg" id="map">map</div>
           </div>
         </div>
         <div class="footer__bottom">
-          <div class="footer__copyright text-18 uppercase text-greyText">© 2025 Shopium</div>
+          <div class="footer__copyright">
+            <div class="text-18 uppercase text-greyText">© 2025 Shopium</div><a class="text-18 link-line w-fit uppercase uppercase text-blackText" href="#">политика конфиденциальности</a>
+          </div>
           <div class="footer__info">
             <div class="text-18 uppercase text-greyText">ИП ГЛУШЕНКО Ф.А.</div>
             <div class="text-18 uppercase text-greyText">ИНН 540451793640</div>

@@ -5,12 +5,12 @@
     <title>Index</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta name="theme-color" content="#4285f4">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="scripts/index.js?1737650686925"></script>
+    <meta name="format-detection" content="telephone=no">
+    <script type="module" crossorigin src="scripts/index.js?1738804733051"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
-  <body data-barba="wrapper">
+  <body class="loading" data-barba="wrapper">
     <div class="wrapper">
       <header class="header active" data-header="">
         <div class="header__bg"></div>
@@ -108,22 +108,120 @@
       </div>
       <footer class="footer">
         <div class="footer__top">
-          <div class="footer__contacts">
-            <div class="footer__contact"><a class="title-48 link-line" href="tel:89215896284" target="_blank">8 921 589-62-84</a></div>
-            <div class="footer__contact"><a class="title-48 link-line" href="mailto:info@shopium-global.ru" target="_blank">info@shopium-global.ru</a></div>
-            <div class="footer__contact"><a class="text-24 link-line" href="https://yandex.ru/maps/?text=Москва,_Садовническая_набережная,_9" target="_blank">Москва, Садовническая набережная, 9</a></div>
+          <div class="footer__contacts" data-scroll-animate="appear">
+            <div class="footer__contacts__title title-80">Наши контакты</div>
+            <div class="footer__contacts__list">
+              <div class="footer__contact"><a class="footer-contact-link" href="https://yandex.ru/maps/?text=Москва,_Садовническая_набережная,_9" target="_blank">
+                  <div class="footer-contact-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="fill-dark-blue" fill-rule="evenodd" clip-rule="evenodd" d="M16 29.2153L16.7673 28.5453C23.2201 22.9108 26.5 17.9911 26.5 13.6665C26.5 7.54228 21.7201 3.1665 16 3.1665C10.2799 3.1665 5.5 7.54228 5.5 13.6665C5.5 17.9911 8.77986 22.9108 15.2326 28.5453L16 29.2153ZM16 26.1071C10.5244 21.1723 7.83333 16.9906 7.83333 13.6665C7.83333 8.87921 11.5248 5.49984 16 5.49984C20.4752 5.49984 24.1667 8.87921 24.1667 13.6665C24.1667 16.9906 21.4756 21.1723 16 26.1071ZM16 7.83317C19.2217 7.83317 21.8333 10.4448 21.8333 13.6665C21.8333 16.8882 19.2217 19.4998 16 19.4998C12.7783 19.4998 10.1667 16.8882 10.1667 13.6665C10.1667 10.4448 12.7783 7.83317 16 7.83317ZM12.5 13.6665C12.5 11.7335 14.067 10.1665 16 10.1665C17.933 10.1665 19.5 11.7335 19.5 13.6665C19.5 15.5995 17.933 17.1665 16 17.1665C14.067 17.1665 12.5 15.5995 12.5 13.6665Z" fill="#3526EB"></path>
+                    </svg>
+                  </div>
+                  <div class="footer-contact-link__text text-24 text-blackText">Москва, Садовническая набережная,&nbsp;9</div></a>
+              </div>
+              <div class="footer__contact"><a class="phone-link" href="tel:89215896284">
+                  <div class="phone-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="fill-dark-blue" d="M15.4889 22.1583L10.3265 17.0828L15.0116 12.4063L9.06848 4.52832L4.53076 9.05715L5.00797 15.5036L17.4151 27.6936L23.4884 27.9799L28 23.4597L20.122 17.5166L15.4889 22.1583Z" fill="white"></path>
+                      <path class="fill-dark-blue" d="M24.848 15.6427L27.4367 15.3813C26.8858 9.90989 22.5672 5.47406 17.1674 4.83105L16.8605 7.41548C21.0576 7.91545 24.4164 11.374 24.847 15.6416L24.848 15.6427Z" fill="white"></path>
+                      <path class="fill-dark-blue" d="M20.293 15.7125L22.8655 15.3123C22.4078 12.3688 20.1531 10.0286 17.2542 9.48633L16.7759 12.0447C18.5914 12.3842 20.0045 13.8569 20.2919 15.7126L20.293 15.7125Z" fill="white"></path>
+                    </svg>
+                  </div>
+                  <div class="phone-link__text title-28 uppercase">8 921 589-62-84</div></a>
+              </div>
+              <div class="footer__contact"><a class="footer-contact-link" href="mailto:info@shopium-global.ru" target="_blank">
+                  <div class="footer-contact-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="fill-dark-blue" fill-rule="evenodd" clip-rule="evenodd" d="M5.49996 5.5H26.5C27.7886 5.5 28.8333 6.54467 28.8333 7.83333V24.1667C28.8333 25.4553 27.7886 26.5 26.5 26.5H5.49996C4.21129 26.5 3.16663 25.4553 3.16663 24.1667V7.83333C3.16663 6.54467 4.21129 5.5 5.49996 5.5ZM5.49996 13.2211V24.1667H26.5V13.2216L15.9999 18.4716L5.49996 13.2211ZM5.49996 10.6123L16 15.8629L26.5 10.6129V7.83333H5.49996V10.6123Z" fill="#3526EB"></path>
+                    </svg>
+                  </div>
+                  <div class="footer-contact-link__text text-24 text-blackText">info@shopium-global.ru</div></a>
+              </div>
+              <div class="footer__contact">
+                <div class="footer-contact-link">
+                  <div class="footer-contact-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="fill-dark-blue" fill-rule="evenodd" clip-rule="evenodd" d="M16 28.8332C8.9123 28.8332 3.16663 23.0875 3.16663 15.9998C3.16663 8.91218 8.9123 3.1665 16 3.1665C23.0876 3.1665 28.8333 8.91218 28.8333 15.9998C28.8333 23.0875 23.0876 28.8332 16 28.8332ZM16 26.4998C21.799 26.4998 26.5 21.7988 26.5 15.9998C26.5 10.2008 21.799 5.49984 16 5.49984C10.201 5.49984 5.49996 10.2008 5.49996 15.9998C5.49996 21.7988 10.201 26.4998 16 26.4998ZM21.8333 14.8332H17.1666V8.99984H14.8333V17.1665H21.8333V14.8332Z" fill="#3526EB"></path>
+                    </svg>
+                  </div>
+                  <div class="footer-contact-link__text text-24">Пн-Пт: 9:00 – 18:00<br>Сб-Вс — выходные</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__socials">
+              <div class="call-to-action">
+                <div class="call-to-action__header">
+                  <div class="call-to-action__blink"></div>
+                  <div class="call-to-action__title title-32 text-whiteText">Напишите нам, мы онлайн</div>
+                </div>
+                <div class="call-to-action__contacts"><a class="button-icon button--hyperion button tg" href="https://t.me/shopium_help" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                          <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                        </svg></span><span class="button-icon__text link-18 uppercase">Telegram</span></span></a><a class="button-icon button--hyperion button wa" href="https://wa.me/79215896284" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                          <path class="fill-wa-green fill-white" d="M23.3561 8.63343C21.3993 6.68343 18.7902 5.6001 16.0362 5.6001C10.3108 5.6001 5.67245 10.2223 5.67245 15.9279C5.67245 17.7334 6.17977 19.539 7.04945 21.0557L5.59998 26.4001L11.108 24.9557C12.6299 25.7501 14.2968 26.1834 16.0362 26.1834C21.7616 26.1834 26.4 21.5612 26.4 15.8557C26.3275 13.1834 25.3129 10.5834 23.3561 8.63343ZM21.0369 19.6112C20.8195 20.189 19.8049 20.7668 19.2975 20.839C18.8627 20.9112 18.2829 20.9112 17.7031 20.7668C17.3407 20.6223 16.8334 20.4779 16.2536 20.189C13.6446 19.1057 11.9777 16.5057 11.8327 16.289C11.6878 16.1445 10.7456 14.9168 10.7456 13.6168C10.7456 12.3168 11.3979 11.739 11.6153 11.4501C11.8327 11.1612 12.1226 11.1612 12.34 11.1612C12.485 11.1612 12.7024 11.1612 12.8474 11.1612C12.9923 11.1612 13.2097 11.089 13.4272 11.5945C13.6446 12.1001 14.1519 13.4001 14.2244 13.4723C14.2968 13.6168 14.2968 13.7612 14.2244 13.9057C14.1519 14.0501 14.0794 14.1945 13.9345 14.339C13.7895 14.4834 13.6446 14.7001 13.5721 14.7723C13.4272 14.9168 13.2822 15.0612 13.4272 15.2779C13.5721 15.5668 14.0794 16.3612 14.8766 17.0834C15.8913 17.9501 16.6885 18.239 16.9784 18.3834C17.2683 18.5279 17.4132 18.4557 17.5582 18.3112C17.7031 18.1668 18.2104 17.589 18.3554 17.3001C18.5003 17.0112 18.7177 17.0834 18.9352 17.1557C19.1526 17.2279 20.4571 17.8779 20.6745 18.0223C20.9644 18.1668 21.1094 18.239 21.1819 18.3112C21.2543 18.5279 21.2543 19.0334 21.0369 19.6112Z" fill="#1D1D1D"></path>
+                        </svg></span><span class="button-icon__text link-18 uppercase">WhatsApp</span></span></a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="footer__socials"><a class="button-icon button--hyperion white bg-greyLinkBg" href="https://t.me/shopium_help" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                    <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
-                  </svg></span><span class="button-icon__text link-18 uppercase">Telegram</span></span></a><a class="button-icon button--hyperion white bg-greyLinkBg" href="https://wa.me/79215896284" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                    <path class="fill-wa-green fill-white" d="M23.3561 8.63343C21.3993 6.68343 18.7902 5.6001 16.0362 5.6001C10.3108 5.6001 5.67245 10.2223 5.67245 15.9279C5.67245 17.7334 6.17977 19.539 7.04945 21.0557L5.59998 26.4001L11.108 24.9557C12.6299 25.7501 14.2968 26.1834 16.0362 26.1834C21.7616 26.1834 26.4 21.5612 26.4 15.8557C26.3275 13.1834 25.3129 10.5834 23.3561 8.63343ZM21.0369 19.6112C20.8195 20.189 19.8049 20.7668 19.2975 20.839C18.8627 20.9112 18.2829 20.9112 17.7031 20.7668C17.3407 20.6223 16.8334 20.4779 16.2536 20.189C13.6446 19.1057 11.9777 16.5057 11.8327 16.289C11.6878 16.1445 10.7456 14.9168 10.7456 13.6168C10.7456 12.3168 11.3979 11.739 11.6153 11.4501C11.8327 11.1612 12.1226 11.1612 12.34 11.1612C12.485 11.1612 12.7024 11.1612 12.8474 11.1612C12.9923 11.1612 13.2097 11.089 13.4272 11.5945C13.6446 12.1001 14.1519 13.4001 14.2244 13.4723C14.2968 13.6168 14.2968 13.7612 14.2244 13.9057C14.1519 14.0501 14.0794 14.1945 13.9345 14.339C13.7895 14.4834 13.6446 14.7001 13.5721 14.7723C13.4272 14.9168 13.2822 15.0612 13.4272 15.2779C13.5721 15.5668 14.0794 16.3612 14.8766 17.0834C15.8913 17.9501 16.6885 18.239 16.9784 18.3834C17.2683 18.5279 17.4132 18.4557 17.5582 18.3112C17.7031 18.1668 18.2104 17.589 18.3554 17.3001C18.5003 17.0112 18.7177 17.0834 18.9352 17.1557C19.1526 17.2279 20.4571 17.8779 20.6745 18.0223C20.9644 18.1668 21.1094 18.239 21.1819 18.3112C21.2543 18.5279 21.2543 19.0334 21.0369 19.6112Z" fill="#1D1D1D"></path>
-                  </svg></span><span class="button-icon__text link-18 uppercase">WhatsApp</span></span></a>
+          <div class="footer__galleries">
+            <div class="footer__gallery" data-scroll-animate="appear">
+              <div class="footer__gallery-title title-32">Офис</div>
+              <div class="footer__gallery-images">
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-1.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-1.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-1.webp" data-src="images/footer-gallery-1.webp" alt="footer-gallery-1.webp"/>
+                  </picture>
+                </div>
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-2.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-2.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-2.webp" data-src="images/footer-gallery-2.webp" alt="footer-gallery-2.webp"/>
+                  </picture>
+                </div>
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-3.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-3.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-3.webp" data-src="images/footer-gallery-3.webp" alt="footer-gallery-3.webp"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="footer__gallery" data-scroll-animate="appear">
+              <div class="footer__gallery-title title-32">Склад</div>
+              <div class="footer__gallery-images">
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-4.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-4.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-4.webp" data-src="images/footer-gallery-4.webp" alt="footer-gallery-4.webp"/>
+                  </picture>
+                </div>
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-5.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-5.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-5.webp" data-src="images/footer-gallery-5.webp" alt="footer-gallery-5.webp"/>
+                  </picture>
+                </div>
+                <div class="footer__gallery-image">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/footer-gallery-6.webp"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/footer-gallery-6.jpg"/><img class="picture__img lazyload" src="webp/footer-gallery-6.webp" data-src="images/footer-gallery-6.webp" alt="footer-gallery-6.webp"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__map" data-scroll-animate="appear">
+            <div class="footer__map-title title-32">Адрес офиса</div>
+            <div class="bg-greyBg" id="map">map</div>
           </div>
         </div>
         <div class="footer__bottom">
-          <div class="footer__copyright text-18 uppercase text-greyText">© 2025 Shopium</div>
+          <div class="footer__copyright">
+            <div class="text-18 uppercase text-greyText">© 2025 Shopium</div><a class="text-18 link-line w-fit uppercase uppercase text-blackText" href="#">политика конфиденциальности</a>
+          </div>
           <div class="footer__info">
             <div class="text-18 uppercase text-greyText">ИП ГЛУШЕНКО Ф.А.</div>
             <div class="text-18 uppercase text-greyText">ИНН 540451793640</div>
