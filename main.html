@@ -7,10 +7,66 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="format-detection" content="telephone=no">
-    <script type="module" crossorigin src="scripts/index.js?1739188117583"></script>
+    <script type="module" crossorigin src="scripts/index.js?1739563541553"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
   <body class="loading" data-barba="wrapper">
+    <div class="modal-block">
+      <div class="modal-wrapper video" data-modal-wrapper="modal-video-about">
+        <div class="modal-wrapper__overlay" data-modal-overlay="">
+          <div class="standart-modal__close">
+            <button class="button button--hyperion white" data-modal-close="modal-video-about"><span><span class="standart-modal__close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path class="no-fill stroke-white" d="M8.92896 8.92896L23.0711 23.0711" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    <path class="no-fill stroke-white" d="M8.92891 23.0711L23.071 8.92896" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  </svg></span></span></button>
+          </div>
+        </div>
+        <div class="modal-wrapper__content standart-modal">
+          <div class="standart-modal__wrapper" data-lenis-prevent="true">
+            <video controls="controls" playsinline="" muted="" loop="">
+              <source src="videos/hero-desktop.webm" type="video/webm" media="(max-width: 576px)"/>
+              <source src="videos/hero-desktop.mp4" type="video/mp4" media="(max-width: 576px)"/>
+              <source src="videos/hero-desktop.webm" type="video/webm"/>
+              <source src="videos/hero-desktop.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="modal-wrapper form-answer" data-modal-wrapper="form-answer-modal">
+        <div class="modal-wrapper__overlay" data-modal-overlay="">
+          <div class="standart-modal__close">
+            <button class="button button--hyperion white" data-modal-close="form-answer-modal"><span><span class="standart-modal__close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path class="no-fill stroke-white" d="M8.92896 8.92896L23.0711 23.0711" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    <path class="no-fill stroke-white" d="M8.92891 23.0711L23.071 8.92896" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  </svg></span></span></button>
+          </div>
+        </div>
+        <div class="modal-wrapper__content standart-modal">
+          <div class="standart-modal__wrapper" data-lenis-prevent="true">
+            <div class="form-answer__inner">
+              <div class="form-answer__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="201" height="200" viewbox="0 0 201 200" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M177.5 100C177.5 142.526 143.026 177 100.5 177C57.9741 177 23.5 142.526 23.5 100C23.5 57.4741 57.9741 23 100.5 23C143.026 23 177.5 57.4741 177.5 100ZM178.5 100C178.5 143.078 143.578 178 100.5 178C57.4218 178 22.5 143.078 22.5 100C22.5 56.9218 57.4218 22 100.5 22C143.578 22 178.5 56.9218 178.5 100ZM86.8536 123.354L131.854 78.3536L131.146 77.6464L86.5 122.293L69.3536 105.146L68.6464 105.854L86.1464 123.354L86.5 123.707L86.8536 123.354Z" fill="url(#paint0_linear_368_2171)"></path>
+                  <defs>
+                    <lineargradient id="paint0_linear_368_2171" x1="100.5" y1="22" x2="100.5" y2="178" gradientunits="userSpaceOnUse">
+                      <stop stop-color="#3526EB"></stop>
+                      <stop offset="0.27"></stop>
+                      <stop offset="1" stop-color="#CBCBCB"></stop>
+                    </lineargradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="form-answer__title title-48 text-whiteText">Спасибо! Свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>
+              <div class="form-answer__button">
+                <button class="button link-18 button--hyperion uppercase" data-modal-close="form-answer-modal"><span><span>Спасибо, понятно</span></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <header class="header active" data-header="">
         <div class="header__bg"></div>
@@ -82,18 +138,13 @@
           </div>
           <div class="hero__content">
             <h1 class="hero__title title-112 text-whiteText">Доставка сборных<br>грузов&nbsp;из&nbsp;США<br>от&nbsp;7&nbsp;дней</h1>
-            <div class="hero__buttons">
-              <button class="button link-18 button--hyperion uppercase"><span><span>Заявка на доставку</span></span></button>
-              <button class="button link-18 button--hyperion uppercase white"><span><span>КАЛЬКУЛЯТОР</span></span></button>
+            <div class="hero__buttons"><a class="button link-18 button--hyperion uppercase" href="#form-section-photo" data-anchor-link=""><span><span>Заявка на доставку</span></span></a><a class="button link-18 button--hyperion uppercase white" href="#quiz-calculation" data-anchor-link=""><span><span>КАЛЬКУЛЯТОР</span></span></a>
             </div>
-          </div><a class="hero__bottom-card" href="#">
-            <div class="hero__bottom-card-text title-32 text-whiteText">Посмотрите видео&nbsp;— познакомимся за&nbsp;полторы минуты</div>
-            <div class="hero__bottom-card-button">
+          </div><a class="hero__bottom-card" data-modal-btn="modal-video-about"><span class="hero__bottom-card-text title-32 text-whiteText">Посмотрите видео&nbsp;— познакомимся за&nbsp;полторы минуты</span><span class="hero__bottom-card-button">
               <button class="button-text-icon link-line text-blueText reverse white link-line pointer-events-none text-whiteText"><span class="button-text-icon__text link-18">смотреть видео</span><span class="button-text-icon__icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewbox="0 0 26 26" fill="none">
                     <path d="M20 13L6 23L6 3L20 13Z" fill="white"></path>
-                  </svg></span></button>
-            </div></a>
+                  </svg></span></button></span></a>
         </div>
         <div class="content">
           <section class="section pb-5">
@@ -187,8 +238,7 @@
                   <div class="service-highlight__content">
                     <div class="service-highlight__title title-44 text-whiteText">Грузоперевозки <br class="desktop">под&nbsp;ключ</div>
                     <div class="service-highlight__text text-22 text-whiteText">Выполним любую задачу в сфере логистики</div>
-                    <div class="service-highlight__button">
-                      <button class="button link-18 button--hyperion uppercase wide"><span><span>Оставить заявку</span></span></button>
+                    <div class="service-highlight__button"><a class="button link-18 button--hyperion uppercase wide" href="#form-section-photo" data-anchor-link=""><span><span>Оставить заявку</span></span></a>
                     </div>
                   </div>
                 </div><a class="service-card bg-whiteBg" href="#">
@@ -505,8 +555,7 @@
                   <div class="product-check">
                     <div class="product-check__title title-36">Проверим ваши товары</div>
                     <div class="product-check__text text-24">Напишите нам, и мы мы оперативно проверим возможность доставки того, что вам нужно </div>
-                    <div class="product-check__button">
-                      <button class="button link-18 button--hyperion uppercase"><span><span>уточнить по своим товарам</span></span></button>
+                    <div class="product-check__button"><a class="button link-18 button--hyperion uppercase" href="#form-section-photo" data-anchor-link=""><span><span>уточнить по своим товарам</span></span></a>
                     </div>
                   </div>
                 </div>
@@ -515,8 +564,7 @@
                 <div class="product-check">
                   <div class="product-check__title title-36">Проверим ваши товары</div>
                   <div class="product-check__text text-24">Напишите нам, и мы мы оперативно проверим возможность доставки того, что вам нужно </div>
-                  <div class="product-check__button">
-                    <button class="button link-18 button--hyperion uppercase"><span><span>уточнить по своим товарам</span></span></button>
+                  <div class="product-check__button"><a class="button link-18 button--hyperion uppercase" href="#form-section-photo" data-anchor-link=""><span><span>уточнить по своим товарам</span></span></a>
                   </div>
                 </div>
               </div>
@@ -895,8 +943,7 @@
                         </header>
                         <div class="stage-card__icon">
                         </div>
-                        <footer class="stage-card__footer">
-                          <button class="button link-18 button--hyperion uppercase wide"><span><span>отправить</span></span></button>
+                        <footer class="stage-card__footer"><a class="button link-18 button--hyperion uppercase wide" href="#form-section-photo" data-anchor-link=""><span><span>отправить</span></span></a>
                         </footer>
                         <div class="stage-card__step">
                           <div class="divider-item bg-whiteBg">
@@ -925,7 +972,7 @@
                             </defs>
                           </svg>
                         </div>
-                        <footer class="stage-card__footer"><a class="button link-18 button--hyperion uppercase wide" href="#"><span><span>калькулятор</span></span></a>
+                        <footer class="stage-card__footer"><a class="button link-18 button--hyperion uppercase wide" href="#quiz-calculation" data-anchor-link=""><span><span>калькулятор</span></span></a>
                         </footer>
                         <div class="stage-card__step">
                           <div class="divider-item bg-whiteBg">
@@ -996,7 +1043,7 @@
                 </div>
               </section>
               <section class="section bg-whiteText">
-                <h2 class="section__title title-80" data-scroll-animate="appear">Экспресс-расчет стоимости доставки</h2>
+                <h2 class="section__title title-80" data-scroll-animate="appear" id="quiz-calculation">Экспресс-расчет стоимости доставки</h2>
                 <div class="section__content">
                   <div class="calculation-quiz" data-scroll-animate="appear">
                     <div class="calculation-quiz__form-wrapper bg-greyBg" data-quiz-form-wrapper="">
@@ -2348,82 +2395,87 @@
                   </div>
                 </div>
               </section>
-              <div class="form-section-photo bg-blackBg">
-                <div class="form-section-photo__content" data-scroll-animate="appear">
-                  <div class="form-section__text form-section-photo__text">
-                    <h2 class="form-section__title form-section-photo__title title-80 text-whiteText">Получите расчет</h2>
-                    <div class="form-section__subtitle form-section-photo__subtitle text-24 text-whiteText">Оставьте контактные данные и получите экспресс-расчет по вашему запросу</div>
-                  </div>
-                  <form class="form-section-photo__form" id="get-quote-form" action="" novalidate="" data-validate="form">
-                    <div class="form-section__form-inputs form-section-photo__form-inputs">
-                      <div class="form-section__form-input">
-                        <div class="input-ui__wrapper" data-input-wrapper="">
-                          <div class="input-ui custom-placeholder" data-input-parent="">
-                            <input data-input="" name="name" placeholder="Ваше имя" required="" autocomplete="given-name" minlength="2" maxlength="50" data-validate="name"/>
-                            <div class="custom-placeholder__service"><span>Ваше имя</span>
+              <div class="form-section-photo" id="form-section-photo">
+                <div class="form-section-photo__inner bg-blackBg">
+                  <div class="form-section-photo__content" data-scroll-animate="appear">
+                    <div class="form-section__text form-section-photo__text">
+                      <h2 class="form-section__title form-section-photo__title title-80 text-whiteText">Получите расчет</h2>
+                      <div class="form-section__subtitle form-section-photo__subtitle text-24 text-whiteText">Оставьте контактные данные и получите экспресс-расчет по вашему запросу</div>
+                    </div>
+                    <form class="form-section-photo__form" id="get-quote-form" action="" novalidate="" data-validate="form">
+                      <div class="form-section__form-inputs form-section-photo__form-inputs">
+                        <div class="form-section__form-input">
+                          <div class="input-ui__wrapper" data-input-wrapper="">
+                            <div class="input-ui custom-placeholder" data-input-parent="">
+                              <input data-input="" name="name" placeholder="Ваше имя" required="" autocomplete="given-name" minlength="2" maxlength="50" data-validate="name"/>
+                              <div class="custom-placeholder__service"><span>Ваше имя</span>
+                              </div>
                             </div>
+                            <div class="input-ui__error text-16" data-error-container=""></div>
                           </div>
-                          <div class="input-ui__error text-16" data-error-container=""></div>
+                        </div>
+                        <div class="form-section__form-input">
+                          <div class="input-ui__wrapper" data-input-wrapper="">
+                            <div class="input-ui custom-placeholder" data-input-parent="">
+                              <input data-input="" name="phone" placeholder="Телефон" required="" autocomplete="tel" data-mask-phone="" data-validate="tel"/>
+                              <div class="custom-placeholder__service"><span>Телефон</span>
+                              </div>
+                            </div>
+                            <div class="input-ui__error text-16" data-error-container=""></div>
+                          </div>
                         </div>
                       </div>
-                      <div class="form-section__form-input">
-                        <div class="input-ui__wrapper" data-input-wrapper="">
-                          <div class="input-ui custom-placeholder" data-input-parent="">
-                            <input data-input="" name="phone" placeholder="Телефон" required="" autocomplete="tel" data-mask-phone="" data-validate="tel"/>
-                            <div class="custom-placeholder__service"><span>Телефон</span>
-                            </div>
-                          </div>
-                          <div class="input-ui__error text-16" data-error-container=""></div>
+                      <div class="form-section__radios" data-input-wrapper="">
+                        <div class="form-section__radios-inputs">
+                          <label class="radiobutton">
+                            <input type="radio" name="communication" required="" checked=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Перезвоните мне</span>
+                          </label>
+                          <label class="radiobutton">
+                            <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в Telegram</span>
+                          </label>
+                          <label class="radiobutton">
+                            <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в WhatsApp</span>
+                          </label>
+                        </div>
+                        <div class="form-section__radios-error text-16" data-error-container="">Выберите один из вариантов</div>
+                      </div>
+                      <div class="form-section__form-agreement text-16 text-whiteText"><span class="opacity-60">Нажимая на кнопку «Отправить», вы соглашаетесь c&nbsp;</span><a class="link-line text-whiteText" href="#">политикой кофиденциальности</a></div>
+                      <div class="form-section__form-button">
+                        <button class="button link-18 button--hyperion uppercase wide" type="submit" form="get-quote-form"><span><span>Получить расчет</span></span></button>
+                      </div>
+                      <div class="form-section__form-button">
+                        <button class="button link-18 button--hyperion uppercase" type="button" data-modal-btn="form-answer-modal"><span><span>ответ формы</span></span></button>
+                      </div>
+                    </form>
+                    <div class="form-section-photo__contacts">
+                      <div class="call-to-action">
+                        <div class="call-to-action__header">
+                          <div class="call-to-action__blink"></div>
+                          <div class="call-to-action__title title-32 text-whiteText">Или напишите, мы онлайн</div>
+                        </div>
+                        <div class="call-to-action__contacts"><a class="button-icon button--hyperion button tg" href="https://t.me/shopium_help" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                  <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
+                                </svg></span><span class="button-icon__text link-18 uppercase">Telegram</span></span></a><a class="button-icon button--hyperion button wa" href="https://wa.me/79215896284" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                                  <path class="fill-wa-green fill-white" d="M23.3561 8.63343C21.3993 6.68343 18.7902 5.6001 16.0362 5.6001C10.3108 5.6001 5.67245 10.2223 5.67245 15.9279C5.67245 17.7334 6.17977 19.539 7.04945 21.0557L5.59998 26.4001L11.108 24.9557C12.6299 25.7501 14.2968 26.1834 16.0362 26.1834C21.7616 26.1834 26.4 21.5612 26.4 15.8557C26.3275 13.1834 25.3129 10.5834 23.3561 8.63343ZM21.0369 19.6112C20.8195 20.189 19.8049 20.7668 19.2975 20.839C18.8627 20.9112 18.2829 20.9112 17.7031 20.7668C17.3407 20.6223 16.8334 20.4779 16.2536 20.189C13.6446 19.1057 11.9777 16.5057 11.8327 16.289C11.6878 16.1445 10.7456 14.9168 10.7456 13.6168C10.7456 12.3168 11.3979 11.739 11.6153 11.4501C11.8327 11.1612 12.1226 11.1612 12.34 11.1612C12.485 11.1612 12.7024 11.1612 12.8474 11.1612C12.9923 11.1612 13.2097 11.089 13.4272 11.5945C13.6446 12.1001 14.1519 13.4001 14.2244 13.4723C14.2968 13.6168 14.2968 13.7612 14.2244 13.9057C14.1519 14.0501 14.0794 14.1945 13.9345 14.339C13.7895 14.4834 13.6446 14.7001 13.5721 14.7723C13.4272 14.9168 13.2822 15.0612 13.4272 15.2779C13.5721 15.5668 14.0794 16.3612 14.8766 17.0834C15.8913 17.9501 16.6885 18.239 16.9784 18.3834C17.2683 18.5279 17.4132 18.4557 17.5582 18.3112C17.7031 18.1668 18.2104 17.589 18.3554 17.3001C18.5003 17.0112 18.7177 17.0834 18.9352 17.1557C19.1526 17.2279 20.4571 17.8779 20.6745 18.0223C20.9644 18.1668 21.1094 18.239 21.1819 18.3112C21.2543 18.5279 21.2543 19.0334 21.0369 19.6112Z" fill="#1D1D1D"></path>
+                                </svg></span><span class="button-icon__text link-18 uppercase">WhatsApp</span></span></a>
                         </div>
                       </div>
                     </div>
-                    <div class="form-section__radios" data-input-wrapper="">
-                      <div class="form-section__radios-inputs">
-                        <label class="radiobutton">
-                          <input type="radio" name="communication" required="" checked=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Перезвоните мне</span>
-                        </label>
-                        <label class="radiobutton">
-                          <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в Telegram</span>
-                        </label>
-                        <label class="radiobutton">
-                          <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в WhatsApp</span>
-                        </label>
-                      </div>
-                      <div class="form-section__radios-error text-16" data-error-container="">Выберите один из вариантов</div>
-                    </div>
-                    <div class="form-section__form-agreement text-16 text-whiteText"><span class="opacity-60">Нажимая на кнопку «Отправить», вы соглашаетесь c&nbsp;</span><a class="link-line text-whiteText" href="#">политикой кофиденциальности</a></div>
-                    <div class="form-section__form-button">
-                      <button class="button link-18 button--hyperion uppercase wide" type="submit" form="get-quote-form"><span><span>Получить расчет</span></span></button>
-                    </div>
-                  </form>
-                  <div class="form-section-photo__contacts">
-                    <div class="call-to-action">
-                      <div class="call-to-action__header">
-                        <div class="call-to-action__blink"></div>
-                        <div class="call-to-action__title title-32 text-whiteText">Или напишите, мы онлайн</div>
-                      </div>
-                      <div class="call-to-action__contacts"><a class="button-icon button--hyperion button tg" href="https://t.me/shopium_help" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                                <path class="fill-tg-blue fill-white" d="M26.4 7.1084L22.7302 25.5673C22.7302 25.5673 22.2168 26.8471 20.8062 26.2333L12.3391 19.7559L12.2998 19.7368C13.4435 18.7121 22.3124 10.756 22.7 10.3953C23.3001 9.8368 22.9276 9.50429 22.2309 9.92621L9.1304 18.2269L4.07627 16.5302C4.07627 16.5302 3.2809 16.2479 3.20439 15.6341C3.12686 15.0194 4.10245 14.6868 4.10245 14.6868L24.7066 6.62219C24.7066 6.62219 26.4 5.87982 26.4 7.1084Z" fill="#1D1D1D"></path>
-                              </svg></span><span class="button-icon__text link-18 uppercase">Telegram</span></span></a><a class="button-icon button--hyperion button wa" href="https://wa.me/79215896284" target="_blank"><span class="button-icon__inner"><span class="button-icon__icon">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
-                                <path class="fill-wa-green fill-white" d="M23.3561 8.63343C21.3993 6.68343 18.7902 5.6001 16.0362 5.6001C10.3108 5.6001 5.67245 10.2223 5.67245 15.9279C5.67245 17.7334 6.17977 19.539 7.04945 21.0557L5.59998 26.4001L11.108 24.9557C12.6299 25.7501 14.2968 26.1834 16.0362 26.1834C21.7616 26.1834 26.4 21.5612 26.4 15.8557C26.3275 13.1834 25.3129 10.5834 23.3561 8.63343ZM21.0369 19.6112C20.8195 20.189 19.8049 20.7668 19.2975 20.839C18.8627 20.9112 18.2829 20.9112 17.7031 20.7668C17.3407 20.6223 16.8334 20.4779 16.2536 20.189C13.6446 19.1057 11.9777 16.5057 11.8327 16.289C11.6878 16.1445 10.7456 14.9168 10.7456 13.6168C10.7456 12.3168 11.3979 11.739 11.6153 11.4501C11.8327 11.1612 12.1226 11.1612 12.34 11.1612C12.485 11.1612 12.7024 11.1612 12.8474 11.1612C12.9923 11.1612 13.2097 11.089 13.4272 11.5945C13.6446 12.1001 14.1519 13.4001 14.2244 13.4723C14.2968 13.6168 14.2968 13.7612 14.2244 13.9057C14.1519 14.0501 14.0794 14.1945 13.9345 14.339C13.7895 14.4834 13.6446 14.7001 13.5721 14.7723C13.4272 14.9168 13.2822 15.0612 13.4272 15.2779C13.5721 15.5668 14.0794 16.3612 14.8766 17.0834C15.8913 17.9501 16.6885 18.239 16.9784 18.3834C17.2683 18.5279 17.4132 18.4557 17.5582 18.3112C17.7031 18.1668 18.2104 17.589 18.3554 17.3001C18.5003 17.0112 18.7177 17.0834 18.9352 17.1557C19.1526 17.2279 20.4571 17.8779 20.6745 18.0223C20.9644 18.1668 21.1094 18.239 21.1819 18.3112C21.2543 18.5279 21.2543 19.0334 21.0369 19.6112Z" fill="#1D1D1D"></path>
-                              </svg></span><span class="button-icon__text link-18 uppercase">WhatsApp</span></span></a>
-                      </div>
-                    </div>
                   </div>
-                </div>
-                <div class="form-section-photo__photo">
-                  <div class="form-section-photo__photo-founder link-16 bg-whiteBg uppercase">филипп глушенко, основатель сервиса</div>
-                  <div class="form-section-photo__photo-img">
-                    <picture class="picture">
-                      <source class="lazyload" type="image/webp" srcset="webp/form-founder-mob.webp" media="(max-width: 576px)"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/form-founder-mob.jpg" media="(max-width: 576px)"/>
-                      <source class="lazyload" type="image/webp" srcset="webp/form-founder.webp"/>
-                      <source class="lazyload" type="image/jpeg" srcset="images/form-founder.jpg"/><img class="picture__img lazyload" src="webp/form-founder.webp" data-src="images/form-founder.webp" alt="form-founder.webp"/>
-                    </picture>
+                  <div class="form-section-photo__photo">
+                    <div class="form-section-photo__photo-founder link-16 bg-whiteBg uppercase">филипп глушенко, основатель сервиса</div>
+                    <div class="form-section-photo__photo-img">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/form-founder-mob.webp" media="(max-width: 576px)"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/form-founder-mob.jpg" media="(max-width: 576px)"/>
+                        <source class="lazyload" type="image/webp" srcset="webp/form-founder.webp"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/form-founder.jpg"/><img class="picture__img lazyload" src="webp/form-founder.webp" data-src="images/form-founder.webp" alt="form-founder.webp"/>
+                      </picture>
+                    </div>
+                    <div class="form-section-photo__string"></div>
                   </div>
-                  <div class="form-section-photo__string"></div>
                 </div>
               </div>
             </div>

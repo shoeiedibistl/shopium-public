@@ -7,10 +7,66 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="format-detection" content="telephone=no">
-    <script type="module" crossorigin src="scripts/index.js?1739188117583"></script>
+    <script type="module" crossorigin src="scripts/index.js?1739563541553"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
   <body class="loading" data-barba="wrapper">
+    <div class="modal-block">
+      <div class="modal-wrapper video" data-modal-wrapper="modal-video-about">
+        <div class="modal-wrapper__overlay" data-modal-overlay="">
+          <div class="standart-modal__close">
+            <button class="button button--hyperion white" data-modal-close="modal-video-about"><span><span class="standart-modal__close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path class="no-fill stroke-white" d="M8.92896 8.92896L23.0711 23.0711" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    <path class="no-fill stroke-white" d="M8.92891 23.0711L23.071 8.92896" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  </svg></span></span></button>
+          </div>
+        </div>
+        <div class="modal-wrapper__content standart-modal">
+          <div class="standart-modal__wrapper" data-lenis-prevent="true">
+            <video controls="controls" playsinline="" muted="" loop="">
+              <source src="videos/hero-desktop.webm" type="video/webm" media="(max-width: 576px)"/>
+              <source src="videos/hero-desktop.mp4" type="video/mp4" media="(max-width: 576px)"/>
+              <source src="videos/hero-desktop.webm" type="video/webm"/>
+              <source src="videos/hero-desktop.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="modal-wrapper form-answer" data-modal-wrapper="form-answer-modal">
+        <div class="modal-wrapper__overlay" data-modal-overlay="">
+          <div class="standart-modal__close">
+            <button class="button button--hyperion white" data-modal-close="form-answer-modal"><span><span class="standart-modal__close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path class="no-fill stroke-white" d="M8.92896 8.92896L23.0711 23.0711" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    <path class="no-fill stroke-white" d="M8.92891 23.0711L23.071 8.92896" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                  </svg></span></span></button>
+          </div>
+        </div>
+        <div class="modal-wrapper__content standart-modal">
+          <div class="standart-modal__wrapper" data-lenis-prevent="true">
+            <div class="form-answer__inner">
+              <div class="form-answer__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="201" height="200" viewbox="0 0 201 200" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M177.5 100C177.5 142.526 143.026 177 100.5 177C57.9741 177 23.5 142.526 23.5 100C23.5 57.4741 57.9741 23 100.5 23C143.026 23 177.5 57.4741 177.5 100ZM178.5 100C178.5 143.078 143.578 178 100.5 178C57.4218 178 22.5 143.078 22.5 100C22.5 56.9218 57.4218 22 100.5 22C143.578 22 178.5 56.9218 178.5 100ZM86.8536 123.354L131.854 78.3536L131.146 77.6464L86.5 122.293L69.3536 105.146L68.6464 105.854L86.1464 123.354L86.5 123.707L86.8536 123.354Z" fill="url(#paint0_linear_368_2171)"></path>
+                  <defs>
+                    <lineargradient id="paint0_linear_368_2171" x1="100.5" y1="22" x2="100.5" y2="178" gradientunits="userSpaceOnUse">
+                      <stop stop-color="#3526EB"></stop>
+                      <stop offset="0.27"></stop>
+                      <stop offset="1" stop-color="#CBCBCB"></stop>
+                    </lineargradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="form-answer__title title-48 text-whiteText">Спасибо! Свяжемся с&nbsp;вами в&nbsp;ближайшее время.</div>
+              <div class="form-answer__button">
+                <button class="button link-18 button--hyperion uppercase" data-modal-close="form-answer-modal"><span><span>Спасибо, понятно</span></span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <header class="header active" data-header="">
         <div class="header__bg"></div>
