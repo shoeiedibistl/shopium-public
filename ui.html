@@ -8,7 +8,7 @@
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="format-detection" content="telephone=no">
     <meta property="og:image" content="/images/opengraph.jpg">
-    <script type="module" crossorigin src="scripts/index.js?1742166022810"></script>
+    <script type="module" crossorigin src="scripts/index.js?1742668470446"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
   <body class="loading" data-barba="wrapper">
@@ -134,7 +134,37 @@
           <div class="text-16">text-16</div><br>
           <div class="link-18">link-18</div><br>
           <div class="link-16">link-16</div><br><br><br>+button(title)
-          <button class="button link-18 button--hyperion uppercase"><span><span>title</span></span></button><br><br><br>
+          <button class="button link-18 button--hyperion uppercase"><span><span>title</span></span></button><br><br><br>+accordion(text)<br>
+          <div class="accordion-container">
+            <div class="accordion">
+              <h2 class="accordion__header">
+                <button class="accordion__button" type="button"><span class="title-32">text</span><span class="accordion__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="no-fill stroke-white" d="M8.92896 8.92896L23.0711 23.0711" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path class="no-fill stroke-white" d="M8.92891 23.0711L23.071 8.92896" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </svg></span></button>
+              </h2>
+              <div class="accordion__panel">
+                <div class="accordion__panel-content text-20">
+                  <p>accordion-content</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion">
+              <h2 class="accordion__header">
+                <button class="accordion__button" type="button"><span class="title-32">text</span><span class="accordion__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                      <path class="no-fill stroke-white" d="M8.92896 8.92896L23.0711 23.0711" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                      <path class="no-fill stroke-white" d="M8.92891 23.0711L23.071 8.92896" stroke="#232322" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+                    </svg></span></button>
+              </h2>
+              <div class="accordion__panel">
+                <div class="accordion__panel-content text-20">
+                  <p>accordion-content</p>
+                </div>
+              </div>
+            </div>
+          </div><br><br><br>
           <div class="inline-block bg-blackBg p-4">
             <div class="text-whiteText">+button(title).white</div>
             <button class="button link-18 button--hyperion uppercase white"><span><span>title</span></span></button>
