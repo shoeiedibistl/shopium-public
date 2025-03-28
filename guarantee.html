@@ -8,7 +8,7 @@
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="format-detection" content="telephone=no">
     <meta property="og:image" content="/images/opengraph.jpg">
-    <script type="module" crossorigin src="scripts/index.js?1742734314261"></script>
+    <script type="module" crossorigin src="scripts/index.js?1743202641807"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
   <body class="loading" data-barba="wrapper">
@@ -101,7 +101,7 @@
                   </div>
                   <div class="phone-link__text title-28 uppercase">8 921 589-62-84</div></a>
               </div>
-              <div class="header__contact desktop"><a class="text-20 link-line text-whiteText" href="#">Москва, Садовническая наб., 9</a></div>
+              <div class="header__contact desktop"><a class="text-20 link-line text-whiteText" href="#">Москва, 1-й Красногвардейский проезд, 22, стр.&nbsp;1</a></div>
             </div>
             <div class="header__socials desktop"><a class="socials-icon-link" href="t.me/shopium_help" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
@@ -466,7 +466,7 @@
                 <div class="form-section__subtitle form-section-photo__subtitle text-24 text-whiteText">Оставьте контактные данные и получите экспресс-расчет по вашему запросу</div>
               </div>
               <form class="form-section-photo__form" id="get-quote-form" action="" novalidate="" data-validate="form">
-                <div class="form-section__form-inputs form-section-photo__form-inputs">
+                <div class="form-section__form-inputs form-section-photo__form-inputs" data-tab-input-wrapper="">
                   <div class="form-section__form-input">
                     <div class="input-ui__wrapper" data-input-wrapper="">
                       <div class="input-ui custom-placeholder" data-input-parent="">
@@ -477,7 +477,7 @@
                       <div class="input-ui__error text-16" data-error-container=""></div>
                     </div>
                   </div>
-                  <div class="form-section__form-input">
+                  <div class="form-section__form-input" data-tab-input="phone-primary">
                     <div class="input-ui__wrapper" data-input-wrapper="">
                       <div class="input-ui custom-placeholder" data-input-parent="">
                         <input data-input="" name="phone" placeholder="Телефон" required="" autocomplete="tel" data-mask-phone="" data-validate="tel"/>
@@ -487,17 +487,27 @@
                       <div class="input-ui__error text-16" data-error-container=""></div>
                     </div>
                   </div>
+                  <div class="form-section__form-input hide" data-tab-input="telegram-primary">
+                    <div class="input-ui__wrapper" data-input-wrapper="">
+                      <div class="input-ui custom-placeholder" data-input-parent="">
+                        <input data-input="" name="telegram" placeholder="Никнейм" data-validate="text"/>
+                        <div class="custom-placeholder__service"><span>Никнейм</span>
+                        </div>
+                      </div>
+                      <div class="input-ui__error text-16" data-error-container=""></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="form-section__radios" data-input-wrapper="">
                   <div class="form-section__radios-inputs">
                     <label class="radiobutton">
-                      <input type="radio" name="communication" required="" checked=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Перезвоните мне</span>
+                      <input type="radio" name="communication" required="" checked="" data-tab-input-tab="phone-primary"/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Перезвоните мне</span>
                     </label>
                     <label class="radiobutton">
-                      <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в Telegram</span>
+                      <input type="radio" name="communication" required="" data-tab-input-tab="telegram-primary"/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в Telegram</span>
                     </label>
                     <label class="radiobutton">
-                      <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в WhatsApp</span>
+                      <input type="radio" name="communication" required="" data-tab-input-tab="phone-primary"/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Напишите в WhatsApp</span>
                     </label>
                   </div>
                   <div class="form-section__radios-error text-16" data-error-container="">Выберите один из вариантов</div>
@@ -561,7 +571,7 @@
                     </svg>
                   </div>
                   <div class="phone-link__text title-28 uppercase">8 921 589-62-84</div></a>
-                <div class="burger-menu__contact"><a class="text-20 link-line" href="https://yandex.ru/maps/?text=Москва,_Садовническая_набережная,_9" target="_blank">Москва, Садовническая наб., 9</a></div>
+                <div class="burger-menu__contact"><a class="text-20 link-line" href="https://yandex.ru/maps/?text=Москва,_1-й_Красногвардейский проезд,_22,_стр._1" target="_blank">Москва, 1-й Красногвардейский проезд, 22, стр.&nbsp;1</a></div>
               </div>
               <div class="burger-menu__socials"><a class="socials-icon-link" href="t.me/shopium_help" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
@@ -580,19 +590,19 @@
           <div class="footer__contacts" data-scroll-animate="appear">
             <div class="footer__contacts__title title-80">Наши контакты</div>
             <div class="footer__contacts__list">
-              <div class="footer__contact"><a class="footer-contact-link desktop" href="https://yandex.ru/maps/?text=Москва,_Садовническая_набережная,_9" target="_blank">
+              <div class="footer__contact"><a class="footer-contact-link desktop" href="https://yandex.ru/maps/?text=Москва,_1-й_Красногвардейский_проезд,_22с1" target="_blank">
                   <div class="footer-contact-link__icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
                       <path class="fill-dark-blue" fill-rule="evenodd" clip-rule="evenodd" d="M16 29.2153L16.7673 28.5453C23.2201 22.9108 26.5 17.9911 26.5 13.6665C26.5 7.54228 21.7201 3.1665 16 3.1665C10.2799 3.1665 5.5 7.54228 5.5 13.6665C5.5 17.9911 8.77986 22.9108 15.2326 28.5453L16 29.2153ZM16 26.1071C10.5244 21.1723 7.83333 16.9906 7.83333 13.6665C7.83333 8.87921 11.5248 5.49984 16 5.49984C20.4752 5.49984 24.1667 8.87921 24.1667 13.6665C24.1667 16.9906 21.4756 21.1723 16 26.1071ZM16 7.83317C19.2217 7.83317 21.8333 10.4448 21.8333 13.6665C21.8333 16.8882 19.2217 19.4998 16 19.4998C12.7783 19.4998 10.1667 16.8882 10.1667 13.6665C10.1667 10.4448 12.7783 7.83317 16 7.83317ZM12.5 13.6665C12.5 11.7335 14.067 10.1665 16 10.1665C17.933 10.1665 19.5 11.7335 19.5 13.6665C19.5 15.5995 17.933 17.1665 16 17.1665C14.067 17.1665 12.5 15.5995 12.5 13.6665Z" fill="#3526EB"></path>
                     </svg>
                   </div>
-                  <div class="footer-contact-link__text text-24 text-blackText">Москва, Садовническая набережная,&nbsp;9</div></a><a class="footer-contact-link devices" href="geo:55.746446, 37.629017" target="_blank">
+                  <div class="footer-contact-link__text text-24 text-blackText">Москва, 1-й Красногвардейский проезд, 22, стр.&nbsp;1</div></a><a class="footer-contact-link devices" href="geo:55.746446, 37.629017" target="_blank">
                   <div class="footer-contact-link__icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
                       <path class="fill-dark-blue" fill-rule="evenodd" clip-rule="evenodd" d="M16 29.2153L16.7673 28.5453C23.2201 22.9108 26.5 17.9911 26.5 13.6665C26.5 7.54228 21.7201 3.1665 16 3.1665C10.2799 3.1665 5.5 7.54228 5.5 13.6665C5.5 17.9911 8.77986 22.9108 15.2326 28.5453L16 29.2153ZM16 26.1071C10.5244 21.1723 7.83333 16.9906 7.83333 13.6665C7.83333 8.87921 11.5248 5.49984 16 5.49984C20.4752 5.49984 24.1667 8.87921 24.1667 13.6665C24.1667 16.9906 21.4756 21.1723 16 26.1071ZM16 7.83317C19.2217 7.83317 21.8333 10.4448 21.8333 13.6665C21.8333 16.8882 19.2217 19.4998 16 19.4998C12.7783 19.4998 10.1667 16.8882 10.1667 13.6665C10.1667 10.4448 12.7783 7.83317 16 7.83317ZM12.5 13.6665C12.5 11.7335 14.067 10.1665 16 10.1665C17.933 10.1665 19.5 11.7335 19.5 13.6665C19.5 15.5995 17.933 17.1665 16 17.1665C14.067 17.1665 12.5 15.5995 12.5 13.6665Z" fill="#3526EB"></path>
                     </svg>
                   </div>
-                  <div class="footer-contact-link__text text-24 text-blackText">Москва, Садовническая набережная,&nbsp;9</div></a>
+                  <div class="footer-contact-link__text text-24 text-blackText">Москва, 1-й Красногвардейский проезд, 22, стр.&nbsp;1</div></a>
               </div>
               <div class="footer__contact"><a class="phone-link" href="tel:89215896284">
                   <div class="phone-link__icon">
