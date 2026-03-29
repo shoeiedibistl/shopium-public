@@ -8,7 +8,7 @@
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="format-detection" content="telephone=no">
     <meta property="og:image" content="/images/opengraph.jpg">
-    <script type="module" crossorigin src="scripts/index.js?1773344153751"></script>
+    <script type="module" crossorigin src="scripts/index.js?1774812301974"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
   <body class="loading" data-barba="wrapper">
@@ -285,26 +285,16 @@
             <div class="form-section-photo__content" data-scroll-animate="appear">
               <div class="form-section__text form-section-photo__text">
                 <h2 class="form-section__title form-section-photo__title title-80 text-whiteText">Связаться в 1 клик</h2>
-                <div class="form-section__subtitle form-section-photo__subtitle text-24 text-whiteText">Вы сможете задать вопросы менеджеру и получить расчёт</div>
+                <div class="form-section__subtitle form-section-photo__subtitle text-24 text-whiteText">Свяжемся в течение 15 минут</div>
               </div>
               <form class="form-section-photo__form" id="get-quote-form" action="" novalidate="" data-validate="form">
-                <div class="form-section__form-input" data-tab-input="phone-primary">
-                  <div class="input-ui__wrapper" data-input-wrapper="">
-                    <div class="input-ui custom-placeholder" data-input-parent="">
-                      <input data-input="" name="phone" placeholder="Телефон" required="" autocomplete="tel" data-mask-phone="" data-validate="tel"/>
-                      <div class="custom-placeholder__service"><span>Телефон</span>
-                      </div>
-                    </div>
-                    <div class="input-ui__error text-16" data-error-container=""></div>
-                  </div>
-                </div>
                 <div class="form-section__radios" data-input-wrapper="">
                   <div class="form-section__radios-inputs">
                     <label class="radiobutton">
                       <input type="radio" name="communication" required="" checked=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Перезвоните мне</span>
                     </label>
                     <label class="radiobutton">
-                      <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Telegram</span>
+                      <input type="radio" name="communication" required="" data-radio-telegram=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">Telegram</span>
                     </label>
                     <label class="radiobutton">
                       <input type="radio" name="communication" required=""/><span class="radiobutton__box"><span class="radiobutton__check"></span></span><span class="radiobutton__text text-20 text-whiteText">MAX</span>
@@ -315,10 +305,35 @@
                   </div>
                   <div class="form-section__radios-error text-16" data-error-container="">Выберите один из вариантов</div>
                 </div>
-                <div class="form-section__form-button">
-                  <button class="button link-18 button--hyperion uppercase wide" type="submit" form="get-quote-form"><span><span>Получить расчет</span></span></button>
+                <div class="form-section-photo__form-grid">
+                  <div class="form-section__form-input" data-tab-input="phone-primary">
+                    <div class="input-ui__wrapper" data-input-wrapper="">
+                      <div class="input-ui custom-placeholder" data-input-parent="">
+                        <input data-input="" name="phone" placeholder="Телефон" required="" autocomplete="tel" data-mask-phone="" data-validate="tel"/>
+                        <div class="custom-placeholder__service"><span>Телефон</span>
+                        </div>
+                      </div>
+                      <div class="input-ui__error text-16" data-error-container=""></div>
+                    </div>
+                  </div>
+                  <div class="form-section__form-input hide" data-tab-input="telegram-primary" data-radio-telegram-input="">
+                    <div class="input-ui__wrapper" data-input-wrapper="">
+                      <div class="input-ui custom-placeholder" data-input-parent="">
+                        <input data-input="" name="telegram" placeholder="Никнейм" data-validate="text"/>
+                        <div class="custom-placeholder__service"><span>Никнейм</span>
+                        </div>
+                      </div>
+                      <div class="input-ui__error text-16" data-error-container=""></div>
+                    </div>
+                  </div>
+                  <div class="form-section__form-button desktop">
+                    <button class="button link-18 button--hyperion uppercase wide" type="submit" form="get-quote-form"><span><span>Отправить</span></span></button>
+                  </div>
                 </div>
                 <div class="form-section__form-agreement text-16 text-whiteText"><span class="opacity-60">Нажимая на кнопку «Отправить», вы соглашаетесь c&nbsp;</span><a class="link-line text-whiteText" href="#">политикой кофиденциальности</a></div>
+                <div class="form-section__form-button devices">
+                  <button class="button link-18 button--hyperion uppercase wide" type="submit" form="get-quote-form"><span><span>Отправить</span></span></button>
+                </div>
                 <div class="form-section__form-button">
                   <button class="button link-18 button--hyperion uppercase" type="button" data-modal-btn="form-answer-modal"><span><span>ответ формы</span></span></button>
                 </div>
