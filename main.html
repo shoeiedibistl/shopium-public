@@ -8,7 +8,7 @@
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
     <meta name="format-detection" content="telephone=no">
     <meta property="og:image" content="/images/opengraph.jpg">
-    <script type="module" crossorigin src="scripts/index.js?1775315041234"></script>
+    <script type="module" crossorigin src="scripts/index.js?1778269864743"></script>
     <link rel="stylesheet" crossorigin href="styles/index.css">
   </head>
   <body class="loading" data-barba="wrapper">
@@ -160,9 +160,25 @@
               <div class="press-section__heading">
                 <h2 class="title-48">Даём комментарии в известных СМИ</h2>
                 <div class="text-20">Основатель сервиса — Филипп Глушенко — делится своими комментариями с профильными СМИ по текущей повестке мировой логистики.</div>
+                <div class="press-section__slider-buttons">
+                  <button class="slider-button button--hyperion white bg-whiteBg" data-slider-prev="press-section"><span><span class="slider-button__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                          <path class="stroke-white" d="M10 5.93031L3.93 12.0003L10 18.0703" stroke="#1D1D1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path>
+                          <path class="stroke-white" d="M20.5 12L4.67 12" stroke="#1D1D1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                          <path class="no-fill stroke-white" d="M14 6.43031L20.07 12.5003L14 18.5703" stroke="#1D1D1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path>
+                          <path class="no-fill stroke-white" d="M3.5 12.5L19.33 12.5" stroke="#1D1D1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
+                        </svg></span></span></button>
+                  <button class="slider-button button--hyperion white bg-whiteBg" data-slider-next="press-section"><span><span class="slider-button__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewbox="0 0 24 25" fill="none">
+                          <path class="no-fill stroke-white" d="M14 6.43031L20.07 12.5003L14 18.5703" stroke="#1D1D1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square"></path>
+                          <path class="no-fill stroke-white" d="M3.5 12.5L19.33 12.5" stroke="#1D1D1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
+                        </svg></span></span></button>
+                </div>
               </div>
               <div class="press-section__cards-wrapper">
-                <div class="press-section__cards swiper" data-mobile-slider="press-section">
+                <div class="press-section__cards swiper" data-slider-id="press-section" data-autoplay-disabled="true">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide"><a class="press-section__card forbes" href="https://www.forbes.ru/biznes/557339-ni-po-vozduhu-ni-morem-iz-za-vojny-v-irane-na-15-20-podorozaut-zapcasti-i-odezda" target="_blank">
                         <div class="press-section__card-bg">
@@ -198,6 +214,41 @@
                         <div class="press-section__card-content">
                           <div class="press-section__card-date link-16">19 марта 2026</div>
                           <h3 class="press-section__card-title title-24">Ни по воздуху, ни морем: из за войны в Иране на 15–20% подорожают запчасти и одежда</h3>
+                        </div></a></div>
+                    <div class="swiper-slide"><a class="press-section__card lenta" href="gazeta.ru/social/news/2026/03/12/28038811.shtml" target="_blank">
+                        <div class="press-section__card-bg">
+                          <picture class="picture">
+                            <source class="lazyload" type="image/webp" srcset="webp/lenta-bg.webp"/>
+                            <source class="lazyload" type="image/jpeg" srcset="images/lenta-bg.jpg"/><img class="picture__img lazyload" src="webp/lenta-bg.webp" data-src="images/lenta-bg.webp" alt="lenta-bg.webp"/>
+                          </picture>
+                        </div>
+                        <div class="press-section__card-heading">
+                          <div class="press-section__card-logo">
+                            <svg width="177" height="29" viewBox="0 0 177 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_1118_1745)">
+                                <g clip-path="url(#clip1_1118_1745)">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.8976 20.369C22.8976 16.1571 27.4631 16.019 32.8012 16.019H33.5738V11.462H32.5905C27.2524 11.462 23.8107 11.1166 23.8107 8.2166C23.8107 5.66184 25.9179 4.90245 28.6571 4.90245C32.2393 4.90245 34.206 5.66187 35.681 6.69759V1.24289C34.206 0.552415 31.8881 0 28.6571 0C22.5464 0 17.7702 2.27857 17.7702 7.94048C17.7702 10.219 18.894 13.05 22.1952 13.6715C18.8238 14.2238 16.7869 17.2619 16.7869 20.369C16.7869 26.7214 22.125 29 28.6571 29C33.3631 29 36.5238 28.3786 38.631 26.9286V21.1976C37.0857 22.7857 33.7143 24.0976 29.8512 24.0976C26.831 24.0976 22.8976 23.131 22.8976 20.369ZM91.0286 0.621361H60.475V16.8476L41.7917 0H41.5107V28.3786H47.5512V12.7738L66.3048 29H66.5857V5.52381H75.7167V28.3786H81.7571V5.52381H91.0286V0.621361ZM6.11071 0.759591H0V28.3095H16.0143V22.9929H6.11071V0.759591ZM148.413 11.462C148.413 4.55721 143.918 0.759591 136.402 0.759591H127.482V28.3095H133.523V22.2333H136.402C137.245 22.2333 138.018 22.2333 138.79 22.0952L144.339 28.3095H151.504L144.199 19.9547C146.868 17.9523 148.413 14.9144 148.413 11.462ZM135.77 17.4H133.523V5.59292H135.84C140.195 5.59292 142.302 7.7334 142.302 11.462C142.302 14.7763 140.055 17.4 135.77 17.4ZM120.599 22.5096C118.773 22.5096 117.298 23.8904 117.298 25.6857C117.298 27.55 118.773 29 120.599 29C122.355 29 123.83 27.55 123.83 25.6857C123.83 23.8904 122.355 22.5096 120.599 22.5096ZM170.889 0.759591V15.2596C170.889 21.3358 168.501 24.0976 164.638 24.0976C160.635 24.0976 158.317 21.3358 158.317 15.2596V0.759591H152.206V13.9476C152.206 23.2 155.577 29 164.638 29C173.699 29 177 23.0619 177 13.9476V0.759591H170.889ZM100.089 0H99.8083L85.1988 28.3095H91.731L93.8381 23.6834H106.34L108.588 28.3095H115.12L100.089 0ZM96.0155 18.9881L99.9488 10.7024L104.023 18.9881H96.0155Z" fill="white"></path>
+                                </g>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_1118_1745">
+                                  <rect width="177" height="29" fill="white"></rect>
+                                </clipPath>
+                                <clipPath id="clip1_1118_1745">
+                                  <rect width="177" height="29" fill="white"></rect>
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <div class="press-section__card-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M8.96199 8.63787L22.3933 8.63787M22.3933 8.63787L22.3933 22.0691M22.3933 8.63787L9.42073 21.6104" stroke="white" stroke-width="1.5" stroke-linecap="square"></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="press-section__card-content">
+                          <div class="press-section__card-date link-16">29 апреля 2026</div>
+                          <h3 class="press-section__card-title title-24">Названы самые популярные заграничные товары среди заказов россиян</h3>
                         </div></a></div>
                     <div class="swiper-slide"><a class="press-section__card gazeta" href="gazeta.ru/social/news/2026/03/12/28038811.shtml" target="_blank">
                         <div class="press-section__card-bg">
